@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>КИНО</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>CINEMA</title>
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <title>INNOPOLIS CINEMA</title>
 
 </head>
 
 <body>
-    <header class="head">
-        <a href="https://innopolis.university/">
+    <header class="block01">
+        <a href="https://innopolis.university/" class="block01__logo">
             <svg width="156" height="40" viewBox="0 0 156 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M7.34037 9.20041C7.31358 9.61861 7.26 9.91732 7.26 10.216C7.26 12.4564 7.23321 14.6967 7.26 16.9371C7.26 17.5644 7.09926 17.7735 6.53666 17.7735C4.76849 17.7735 4.76849 17.7735 4.76849 15.802C4.76849 13.6214 4.76849 11.4109 4.76849 9.23028C4.76849 7.85621 5.54541 7.07955 6.75098 6.98994C8.0905 6.87045 9.10854 7.22891 10.073 8.39389C12.0019 10.694 14.0915 12.8148 16.1008 14.9954C16.208 15.1149 16.3152 15.2045 16.5563 15.4136C16.5831 15.0253 16.6366 14.7565 16.6366 14.5175C16.6366 12.6655 16.6366 10.8135 16.6366 8.93157C16.6366 7.67698 17.1724 7.04968 18.3244 7.01981C18.8334 6.98994 19.3425 7.04968 19.8515 6.98994C20.4409 6.9302 20.8695 7.19904 21.2714 7.64711C23.4682 10.0667 25.6918 12.4564 27.9154 14.876C28.0493 15.0253 28.2101 15.1747 28.478 15.4435C28.5048 14.9954 28.5316 14.7565 28.5316 14.5175C28.5316 12.6356 28.5316 10.7537 28.5316 8.87183C28.5316 7.67698 29.0406 7.07955 30.139 7.01981C30.5944 6.98994 31.0231 7.01981 31.3714 7.01981C31.2642 7.76659 31.0767 8.4835 31.0767 9.23028C31.0231 11.4408 31.0767 13.6512 31.0499 15.8617C31.0499 16.25 30.9963 16.6682 30.8891 17.0566C30.7284 17.5345 30.4069 17.8332 29.9247 17.8033C29.4424 17.7735 28.9334 17.7436 28.4512 17.8033C27.46 17.9527 26.7634 17.4748 26.0936 16.6981C24.0308 14.3681 21.9143 12.0681 19.7979 9.76797C19.6372 9.58874 19.4764 9.43938 19.1817 9.17054C19.1549 9.61861 19.1281 9.85758 19.1281 10.0966C19.1281 12.0979 19.1281 14.0993 19.1281 16.1007C19.1281 17.3553 18.7531 17.8033 17.6547 17.7735C14.6541 17.7137 15.6186 18.2215 13.4486 15.8617C11.6 13.7707 9.75151 11.7395 7.87618 9.70822C7.74223 9.55887 7.58148 9.43938 7.34037 9.20041Z"
@@ -75,28 +75,39 @@
                     d="M98.9906 24.5247C97.9994 24.5247 96.9814 24.4943 95.9901 24.5247C96.9814 24.5247 97.9726 24.5247 98.9906 24.5247C99.9551 24.5247 100.92 24.5247 101.884 24.5247C100.893 24.5552 99.9551 24.5247 98.9906 24.5247Z"
                     fill="white" />
             </svg>
-
         </a>
-
-        <ul>
-            <li><a href="tel:+78003551256">+7 (800) 355 12-56</a></li>
-            <li><a href="mailto:kino@innopolis.ru">kino@innopolis.ru></a></li>
-            <li> <a href="#adres"></a> ул.Спортивная д.1 </li>
-            <button type="button">
-                <a href="#call">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M5.67222 7.98889C4.1 7.18333 2.81111 5.9 2.01111 4.32778L3.12371 3.49804C3.44322 3.25977 3.59072 2.85451 3.49912 2.4666L3.09853 0.770184C2.99196 0.318844 2.58905 0 2.1253 0H0.555556C0.25 0 0 0.25 0 0.555556C0 5.77222 4.22778 10 9.44444 10C9.75 10 10 9.75 10 9.44444V7.87332C10 7.4102 9.68201 7.00767 9.23146 6.90048L7.53545 6.49696C7.14653 6.40442 6.73987 6.55242 6.50139 6.87328L5.67222 7.98889Z"
-                            fill="#333333" />
-                    </svg>
-                    Заказать звонок
-                </a>
-            </button>
-            </li>
-            <li><select size="2">RU</select>RU</li>
-        </ul>
-
-        <nav>
+        <div>
+            <ul class="block01__info">
+                <li><a href="tel:+78003551256" class="block01__info_tel">+7 (800) 355 12-56</a></li>
+                <li><a href="mailto:kino@innopolis.ru" class="block01__info_mail">kino@innopolis.ru></a></li>
+                <li> <a href="#adres"></a> ул.Спортивная д.1 </li>
+                <li><button type="submit">
+                        <a href="#call">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.67222 7.98889C4.1 7.18333 2.81111 5.9 2.01111 4.32778L3.12371 3.49804C3.44322 3.25977 3.59072 2.85451 3.49912 2.4666L3.09853 0.770184C2.99196 0.318844 2.58905 0 2.1253 0H0.555556C0.25 0 0 0.25 0 0.555556C0 5.77222 4.22778 10 9.44444 10C9.75 10 10 9.75 10 9.44444V7.87332C10 7.4102 9.68201 7.00767 9.23146 6.90048L7.53545 6.49696C7.14653 6.40442 6.73987 6.55242 6.50139 6.87328L5.67222 7.98889Z"
+                                    fill="#333333" />
+                            </svg>
+                            Заказать звонок
+                        </a>
+                    </button>
+                </li>
+                <li class="lng">
+                    <a href="#">
+                        <span class="lng1">RU
+                            <svg class="lng2" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.00406 3.8728L0.824164 0.692904L1.38985 0.127219L4.00406 2.74143L6.61827 0.127219L7.18396 0.692905L4.00406 3.8728Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="block01__menu">
             <ul>
                 <li><a href="#info">EVENT DETAILS</a></li>
                 <li><a href="#info">SPEAKERS</a></li>
@@ -107,11 +118,9 @@
         </nav>
     </header>
     <main>
-        <h1>
-            Закажите билет в кино
-        </h1>
+        <h1>Закажите билет в кино</h1>
 
-        <p><strong>Всем покупателям подарок!</strong></p>
+        <span><strong>Всем покупателям подарок!</strong></span>
 
         <section>
             <b>Добро пожаловать!</b>
@@ -122,14 +131,14 @@
             <br>dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             <br>non proident, sunt.
         </section>
-        <section>
+        <section class="marketing">
             <h2>
                 Почему мы?
             </h2>
             <div>
-                <img src="images/doska1.png" alt="">
-                <b>Большие экраны</b>
-                <p>
+                <img src="images/doska1.png" alt="" class="marketing__img">
+                <b class="marketing__head">Большие экраны</b>
+                <p class="marketing__text">
                     LLorem ipsum dolor sit amet, consectetur
                     <br>adipiscing elit, sed do eiusmod tempor incididunt
                     <br>ut labore et dolore magna aliqua. Ut enim ad
@@ -137,9 +146,9 @@
                 </p>
             </div>
             <div>
-                <img src="images/doska4.png" alt="">
-                <b>Объёмный звук</b>
-                <p>
+                <img src="images/doska4.png" alt="" class="marketing__img">
+                <b class="marketing__head">Объёмный звук</b>
+                <p class="marketing__text">
                     LLorem ipsum dolor sit amet, consectetur
                     <br>adipiscing elit, sed do eiusmod tempor incididunt
                     <br>ut labore et dolore magna aliqua. Ut enim ad
@@ -147,9 +156,9 @@
                 </p>
             </div>
             <div>
-                <img src="images/doska5.png" alt="">
-                <b>Удобные кресла</b>
-                <p>
+                <img src="images/doska5.png" alt="" class="marketing__img">
+                <b class="marketing__head">Удобные кресла</b>
+                <p class="marketing__text">
                     Lorem ipsum dolor sit amet, consectetur
                     <br>adipiscing elit, sed do eiusmod tempor incididunt
                     <br>ut labore et dolore magna aliqua. Ut enim ad
@@ -157,9 +166,9 @@
                 </p>
             </div>
             <div>
-                <img src="images/doska6.png" alt="">
-                <b>Уютная атмосфера</b>
-                <p>
+                <img src="images/doska6.png" alt="" class="marketing__img">
+                <b class="marketing__head">Уютная атмосфера</b>
+                <p class="marketing__text">
                     Lorem ipsum dolor sit amet, consectetur
                     <br>adipiscing elit, sed do eiusmod tempor incididunt
                     <br>ut labore et dolore magna aliqua. Ut enim ad
@@ -167,9 +176,9 @@
                 </p>
             </div>
             <div>
-                <img src="images/doska2.png" alt="">
-                <b>Полное погружение</b>
-                <p>
+                <img src="images/doska2.png" alt="" class="marketing__img">
+                <b class="marketing__head">Полное погружение</b>
+                <p class="marketing__text">
                     Lorem ipsum dolor sit amet, consectetur
                     <br>adipiscing elit, sed do eiusmod tempor incididunt
                     <br>ut labore et dolore magna aliqua. Ut enim ad
@@ -177,9 +186,9 @@
                 </p>
             </div>
             <div>
-                <img src="images/doska3.png" alt="">
-                <b>Поцелуи на заднем ряду</b>
-                <p>
+                <img src="images/doska3.png" alt="" class="marketing__img">
+                <b class="marketing__head">Поцелуи на заднем ряду</b>
+                <p class="marketing__text">
                     Lorem ipsum dolor sit amet, consectetur
                     <br>adipiscing elit, sed do eiusmod tempor incididunt
                     <br>ut labore et dolore magna aliqua. Ut enim ad
@@ -188,73 +197,69 @@
 
             </div>
         </section>
-        <section>
+        <section class="block03">
             <h2>Выберите фильм</h2>
-            <table class="block_table">
-                <thead class="table_head">
-                    <tr>
-                        <th></th>
-                        <th>
-                            <a href="#" class="block_link">
-                                Начало сеанса
-                                <svg class="block_link_svg" width="9" height="5" viewBox="0 0 9 5" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
-                                </svg>
+            <table class="block03__table">
+                <tr>
+                    <th></th>
+                    <th>
+                        <a href="#" class="block03__link">
+                            Начало сеанса
+                            <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
+                            </svg>
 
-                            </a>
-                        </th>
-                        <th>
-                            <a href="#" class="block_link">
-                                Название фильма
-                                <svg class="block_link_svg" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
-                                </svg>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" class="block03__link">
+                            Название фильма
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
+                            </svg>
 
-                            </a>
-                        </th>
-                        <th>
-                            <a href="#" class="block_link">
-                                Жанр
-                            </a>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="table_body">
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="" id="">
-                        </td>
-                        <td>10:00</td>
-                        <td><a href="https://www.kinopoisk.ru/">Человек-паук</a></td>
-                        <td>Фантастика, боевик, приключения</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="" id="">
-                        </td>
-                        <td>12:00</td>
-                        <td><a href="https://www.kinopoisk.ru/">Собачья жизнь 2</a></td>
-                        <td>Фэнтэзи, драма, комедия</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="" id="">
-                        </td>
-                        <td>14:00</td>
-                        <td><a href="https://www.kinopoisk.ru/">История игрушек 4</a></td>
-                        <td>Мультфильм, фэнтэзи, комедия</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="" id="">
-                        </td>
-                        <td>16:00</td>
-                        <td><a href="https://www.kinopoisk.ru/">Люди в чёрном: Интэрнэшнл</a></td>
-                        <td>Фантастика, боевик, комедия</td>
-                    </tr>
-                </tbody>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" class="block03__link">
+                            Жанр
+                        </a>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>10:00</td>
+                    <td><a href="https://www.kinopoisk.ru/">Человек-паук</a></td>
+                    <td>Фантастика, боевик, приключения</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>12:00</td>
+                    <td><a href="https://www.kinopoisk.ru/">Собачья жизнь 2</a></td>
+                    <td>Фэнтэзи, драма, комедия</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>14:00</td>
+                    <td><a href="https://www.kinopoisk.ru/">История игрушек 4</a></td>
+                    <td>Мультфильм, фэнтэзи, комедия</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>16:00</td>
+                    <td><a href="https://www.kinopoisk.ru/">Люди в чёрном: Интэрнэшнл</a></td>
+                    <td>Фантастика, боевик, комедия</td>
+                </tr>
+
             </table>
         </section>
         <section>
@@ -513,6 +518,7 @@
             Copyright @ 2020 Innopolis University . All Rights Reserved.
         </div>
     </footer>
+
 
 </body>
 

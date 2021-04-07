@@ -6,43 +6,71 @@
 body {
     font-family: 'IBM';
 }
-table{
+
+a {
+    text-decoration: none;
+}
+
+.block01 {
+    background: url(/images/bd-header.png) no-repeat center / cover;
+    width: 1030px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.block01__logo {
+    display: inline-block;
+    float: left;
+}
+
+.block01__info {
+    display: inline;
+    color: #FFFFFF;
+    float: left;
+}
+
+.block01__menu {
+    display: inline;
+    color: #FFFFFF;
+    float: left;
+}
+
+.block01__menu {
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+.block03__table {
+    border-collapse: collapse;
+    color: #FFFFFF;
     border-radius: 10px;
     overflow: hidden;
-    text-align: left;
 }
 
-.head {
-    background: url(/images/bd-header.png) no-repeat center / cover;
-}
-
-.block_table {
-    border-collapse: collapse;
-}
-
-.table_head th {
+.block03__table th {
     background: #A3CC40;
     padding: 10px 20px;
+    
 }
 
-.block_link {
+.block03__link {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.3;
-    color: ivory;
+    
 }
 
-.block_link_svg {
+.block03__link svg {
+    vertical-align: top;
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 11px;
+    margin-top: 11px;
 }
 
-.table_body {
+.block03__table td {
     background: #373737;
-    color: ivory;
-
+    padding: 10px 20px;
 }
-.table_body tr:nth-child(2n) td{
+
+.block03__table tr:nth-child(2n+1) td{
     background: #4C4D4F;
 }
