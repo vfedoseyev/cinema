@@ -53,12 +53,19 @@ h2 {
     font-weight: 500;
     font-size: 48px;
     line-height: 62px;
-    color: #A3CC40;
     margin-left: 135px;
+    color: #A3CC40;
 }
 
 a {
     text-decoration: none;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
 }
 
 *, *::before, *::after {
@@ -67,9 +74,8 @@ a {
 
 header {
     height: 690px;
-    background: url("/images/bd-header.png") no-repeat center / cover;
+    background: url("/images/bg-header.jpg") no-repeat center / cover;
     color: #FFFFFF;
-    overflow: hidden;
     position: relative;
 }
 
@@ -81,6 +87,7 @@ header::after {
     bottom: 0;
     border-top: 110px solid transparent;
     border-right: 1124px solid #fff;
+    z-index: 0;
 }
 
 .block01__logo {
@@ -170,6 +177,7 @@ h1 {
     background: #FFFFFF;
     box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
     border-radius: 10px;
+    z-index: 1;
 }
 
 .welcome h2 {
@@ -177,16 +185,15 @@ h1 {
     font-size: 33px;
     line-height: 43px;
     color: #333333;
-    margin: 47px 68px 0 48px;
+    margin: 35px 68px 0 48px;
 }
 
 .welcome p {
-    font-size: 11px;
-    line-height: 14px;
-    color: #333333;
     margin-top: 15px;
     margin-left: 48px;
     margin-right: 68px;
+    text-align: left;
+    color: #333333;
 }
 
 .block02 {
@@ -221,16 +228,6 @@ h1 {
     color: #333333;
 }
 
-.block02__text {
-    margin-top: 35px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
-    text-align: center;
-    color: #333333;
-}
-
 .block03 h2 {
     margin-top: 165px;
 }
@@ -258,7 +255,7 @@ h1 {
     font-weight: 600;
     font-size: 20px;
     line-height: 26px;
-    padding: 18px 0 15px;
+    
 }
 
 .block03__link svg {
@@ -268,18 +265,161 @@ h1 {
 }
 
 .block03__table td {
-    background: #373737;
-    padding: 20px 0px 15px;
+    background: #4C4D4F;
+    padding: 15px 0px 12px;
     font-size: 14px;
     line-height: 18px;
 }
 
 .block03__table tr:nth-child(2n+1) td {
-    background: #4C4D4F;
+    background: #373737;
 }
 
 .fixed-size {
     width: 80px;
+}
+.fixed-size svg{
+    margin-left: 25px;
+}
+
+.block03 p {
+    margin-top: 30px;
+    margin-left: 293px;
     text-align: center;
-    
+    width: 540px;
+}
+
+.block04 {
+    position: relative;
+    overflow: hidden;
+    background: url("/images/backgtround-block04.jpg") no-repeat center / cover;
+    margin-top: 110px;
+    height: 590px;
+    color: #FFFFFF;
+}
+
+.block04::before {
+    content: "";
+    position: absolute;
+    border-bottom: 110px solid transparent;
+    border-left: 1124px solid #fff;
+}
+
+.block04::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 110px solid transparent;
+    border-right: 1124px solid #fff;
+}
+
+.block04 img {
+    position: absolute;
+    left: 115px;
+    bottom: 381px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.block04__description {
+    width: 550px;
+    margin-top: 140px;
+    margin-left: 450px;
+    text-align: right;
+}
+
+.block04__description h2 {
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.block04__text {
+    margin-top: 50px;
+}
+
+.block04__description p {
+    margin-top: 20px;
+}
+
+.block04__description button {
+    margin-top: 30px;
+    background: #A3CC40;
+    width: 190px;
+    height: 31px;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.block05 {
+    margin-top: 70px;
+}
+
+.block05 p {
+    margin-top: 30px;
+    margin-left: 140px;
+    width: 548px;
+}
+
+.block05__films {
+    margin-top: 65px;
+    margin-left: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.film {
+    ;
+}
+
+.block06 {
+    margin-top: 85px;
+}
+
+.block06 p {
+    margin-top: 30px;
+    margin-left: 140px;
+}
+
+.block06__products {
+    margin-top: 57px;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block07 {
+    margin-top: 50px;
+    background: url("/images/bg-block07.jpg") no-repeat center / cover;
+    height: 792px;
+    position: relative;
+}
+
+.block07::before {
+    content: "";
+    position: absolute;
+    border-bottom: 110px solid transparent;
+    border-left: 1124px solid #fff;
+}
+
+.block07::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 110px solid transparent;
+    border-right: 1124px solid #fff;
+}
+
+.block07 p {
+    color: #FFFFFF;
+    margin-left: 140px;
+    width: 550px;
 }
