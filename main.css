@@ -1,7 +1,10 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("/fonts/IBMPlexSans-Thin.ttf");
+    src: url("../fonts/IBMPlexSans-Thin.ttf"),
+        url("../fonts/IBMPlexSans-Thin.svg"),
+        url("../fonts/IBMPlexSans-Thin.eot"),
+        url("../fonts/IBMPlexSans-Thin.woff");
     font-weight: 100;
     font-style: normal;
 }
@@ -9,7 +12,10 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("/fonts/IBMPlexSans-Regular.ttf");
+    src: url("../fonts/IBMPlexSans-Regular.ttf"),
+        url("../fonts/IBMPlexSans-Regular.eot"),
+        url("../fonts/IBMPlexSans-Regular.svg"),
+        url("../fonts/IBMPlexSans-Regular.woff");
     font-weight: 400;
     font-style: normal;
 }
@@ -17,7 +23,10 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("/fonts/IBMPlexSans-Medium.ttf");
+    src: url("../fonts/IBMPlexSans-Medium.ttf"),
+        url("../fonts/IBMPlexSans-Medium.eot"),
+        url("../fonts/IBMPlexSans-Medium.svg"),
+        url("../fonts/IBMPlexSans-Medium.woff");
     font-weight: 500;
     font-style: normal;
 }
@@ -25,7 +34,10 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("/fonts/IBMPlexSans-SemiBold.ttf");
+    src: url("../fonts/IBMPlexSans-SemiBold.ttf"),
+        url("../fonts/IBMPlexSans-SemiBold.eot"),
+        url("../fonts/IBMPlexSans-SemiBold.svg"),
+        url("../fonts/IBMPlexSans-SemiBold.woff");
     font-weight: 600;
     font-style: normal;
 }
@@ -33,11 +45,13 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("/fonts/IBMPlexSans-Bold.ttf");
+    src: url("../fonts/IBMPlexSans-Bold.ttf"),
+        url("../fonts/IBMPlexSans-Bold.eot"),
+        url("../fonts/IBMPlexSans-Bold.svg"),
+        url("../fonts/IBMPlexSans-Bold.woff");
     font-weight: 700;
     font-style: normal;
 }
-
 html {
     box-sizing: border-box;
 }
@@ -73,7 +87,7 @@ p {
 }
 
 header {
-    height: 690px;
+    height: 668px;
     background: url("/images/bg-header.jpg") no-repeat center / cover;
     color: #FFFFFF;
     position: relative;
@@ -85,20 +99,37 @@ header::after {
     position: absolute;
     left: 0;
     bottom: 0;
-    border-top: 110px solid transparent;
+    border-top: 125px solid transparent;
     border-right: 1124px solid #fff;
     z-index: 0;
 }
 
+.block01__header {
+    margin-left: 83px;
+}
+
 .block01__logo {
     display: inline-block;
-    margin-top: 45px;
-    margin-left: 90px;
+    margin-top: 50px;
 }
 
 nav, nav li {
     display: inline-block;
-    margin-left: 40px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+nav {
+    margin-left: 44px;
+}
+
+.block01__menu1 li {
+    margin-bottom: 14px;
+    margin-right: 50px;
+}
+
+.block01__menu2 li {
+    margin-right: 70px;
 }
 
 .block01__menu1, .block01__menu2 {
@@ -112,7 +143,7 @@ nav, nav li {
     border-bottom: 1px solid #FFFFFF;
 }
 
-.call {
+#call {
     font-family: IBM Plex Sans;
     font-style: normal;
     background: #FFFFFF;
@@ -126,14 +157,14 @@ nav, nav li {
     align-items: center;
 }
 
-.call:hover {
+#call:hover {
     color: #FFFFFF;
     background: #A3CC40;
-    0 border: 2px solid #EAEDE2;
+    border: 2px solid #EAEDE2;
     transition: .2s;
 }
 
-.call svg {
+#call svg {
     padding-right: 10px;
     box-sizing: content-box;
 }
@@ -141,6 +172,13 @@ nav, nav li {
 .call:hover svg {
     fill: #FFFFFF;
     transition: .2s;
+}
+
+.block01__menu1 li :hover {
+    text-decoration-line: underline;
+    color: #A3CC40;
+    cursor: pointer;
+    transition: .4s;
 }
 
 .block01__menu2 li :hover {
@@ -152,7 +190,7 @@ nav, nav li {
 
 .block01__header2 {
     text-align: center;
-    margin-top: 170px;
+    margin-top: 131px;
 }
 
 h1 {
@@ -163,8 +201,9 @@ h1 {
     text-align: center;
 }
 
-.block01__header2 span {
+.block01__header2 p {
     font-size: 41px;
+    margin-top: 19px;
     line-height: 53px;
 }
 
@@ -185,27 +224,27 @@ h1 {
     font-size: 33px;
     line-height: 43px;
     color: #333333;
-    margin: 35px 68px 0 48px;
+    margin: 30px 68px 0 48px;
+}
+
+.welcome__text {
+    margin-top: 25px;
 }
 
 .welcome p {
-    margin-top: 15px;
     margin-left: 48px;
     margin-right: 68px;
     text-align: left;
     color: #333333;
-}
-
-.block02 {
-    position: relative;
+    margin-bottom: 10px;
 }
 
 .block02 h2 {
-    margin-top: 55px;
+    margin-top: 40px;
 }
 
 .block02__marketing {
-    margin-top: 95px;
+    margin-top: 84px;
     margin-left: 96px;
 }
 
@@ -213,13 +252,13 @@ h1 {
     width: 245px;
     height: 338px;
     text-align: center;
-    display: inline-block;
+    float: left;
     margin-left: 54px;
     margin-bottom: 29px;
 }
 
 .block02__card h3 {
-    margin-top: 45px;
+    margin-top: 35px;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -228,8 +267,12 @@ h1 {
     color: #333333;
 }
 
-.block03 h2 {
-    margin-top: 165px;
+.block02__card p {
+    margin-top: 25px;
+}
+
+.block03 {
+    margin-top: 144px;
 }
 
 .block03__table {
@@ -255,7 +298,6 @@ h1 {
     font-weight: 600;
     font-size: 20px;
     line-height: 26px;
-    
 }
 
 .block03__link svg {
@@ -278,7 +320,8 @@ h1 {
 .fixed-size {
     width: 80px;
 }
-.fixed-size svg{
+
+.fixed-size svg {
     margin-left: 25px;
 }
 
@@ -294,14 +337,14 @@ h1 {
     overflow: hidden;
     background: url("/images/backgtround-block04.jpg") no-repeat center / cover;
     margin-top: 110px;
-    height: 590px;
+    height: 585px;
     color: #FFFFFF;
 }
 
 .block04::before {
     content: "";
     position: absolute;
-    border-bottom: 110px solid transparent;
+    border-bottom: 118px solid transparent;
     border-left: 1124px solid #fff;
 }
 
@@ -310,21 +353,21 @@ h1 {
     position: absolute;
     left: 0;
     bottom: 0;
-    border-top: 110px solid transparent;
+    border-top: 96px solid transparent;
     border-right: 1124px solid #fff;
 }
 
 .block04 img {
     position: absolute;
-    left: 115px;
-    bottom: 381px;
+    left: 80px;
+    top: 0;
     border-radius: 100%;
     overflow: hidden;
 }
 
 .block04__description {
-    width: 550px;
-    margin-top: 140px;
+    width: 548px;
+    margin-top: 115px;
     margin-left: 450px;
     text-align: right;
 }
@@ -335,7 +378,7 @@ h1 {
 }
 
 .block04__text {
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 .block04__description p {
@@ -394,7 +437,8 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-
+.block06__card:before {
+}
 .block07 {
     margin-top: 50px;
     background: url("/images/bg-block07.jpg") no-repeat center / cover;
