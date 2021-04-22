@@ -1,10 +1,7 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("../fonts/IBMPlexSans-Thin.ttf"),
-        url("../fonts/IBMPlexSans-Thin.svg"),
-        url("../fonts/IBMPlexSans-Thin.eot"),
-        url("../fonts/IBMPlexSans-Thin.woff");
+    src: url("../fonts/IBMPlexSans-Thin.ttf"), url("../fonts/IBMPlexSans-Thin.svg"), url("../fonts/IBMPlexSans-Thin.eot"), url("../fonts/IBMPlexSans-Thin.woff");
     font-weight: 100;
     font-style: normal;
 }
@@ -12,10 +9,7 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("../fonts/IBMPlexSans-Regular.ttf"),
-        url("../fonts/IBMPlexSans-Regular.eot"),
-        url("../fonts/IBMPlexSans-Regular.svg"),
-        url("../fonts/IBMPlexSans-Regular.woff");
+    src: url("../fonts/IBMPlexSans-Regular.ttf"), url("../fonts/IBMPlexSans-Regular.eot"), url("../fonts/IBMPlexSans-Regular.svg"), url("../fonts/IBMPlexSans-Regular.woff");
     font-weight: 400;
     font-style: normal;
 }
@@ -23,10 +17,7 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("../fonts/IBMPlexSans-Medium.ttf"),
-        url("../fonts/IBMPlexSans-Medium.eot"),
-        url("../fonts/IBMPlexSans-Medium.svg"),
-        url("../fonts/IBMPlexSans-Medium.woff");
+    src: url("../fonts/IBMPlexSans-Medium.ttf"), url("../fonts/IBMPlexSans-Medium.eot"), url("../fonts/IBMPlexSans-Medium.svg"), url("../fonts/IBMPlexSans-Medium.woff");
     font-weight: 500;
     font-style: normal;
 }
@@ -34,10 +25,7 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("../fonts/IBMPlexSans-SemiBold.ttf"),
-        url("../fonts/IBMPlexSans-SemiBold.eot"),
-        url("../fonts/IBMPlexSans-SemiBold.svg"),
-        url("../fonts/IBMPlexSans-SemiBold.woff");
+    src: url("../fonts/IBMPlexSans-SemiBold.ttf"), url("../fonts/IBMPlexSans-SemiBold.eot"), url("../fonts/IBMPlexSans-SemiBold.svg"), url("../fonts/IBMPlexSans-SemiBold.woff");
     font-weight: 600;
     font-style: normal;
 }
@@ -45,13 +33,11 @@
 @font-face {
     display: swap;
     font-family: IBM Plex Sans;
-    src: url("../fonts/IBMPlexSans-Bold.ttf"),
-        url("../fonts/IBMPlexSans-Bold.eot"),
-        url("../fonts/IBMPlexSans-Bold.svg"),
-        url("../fonts/IBMPlexSans-Bold.woff");
+    src: url("../fonts/IBMPlexSans-Bold.ttf"), url("../fonts/IBMPlexSans-Bold.eot"), url("../fonts/IBMPlexSans-Bold.svg"), url("../fonts/IBMPlexSans-Bold.woff");
     font-weight: 700;
     font-style: normal;
 }
+
 html {
     box-sizing: border-box;
 }
@@ -60,6 +46,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     width: 1124px;
     margin: 0 auto;
+    min-width: 550px;
 }
 
 h2 {
@@ -143,7 +130,7 @@ nav {
     border-bottom: 1px solid #FFFFFF;
 }
 
-#call {
+.call {
     font-family: IBM Plex Sans;
     font-style: normal;
     background: #FFFFFF;
@@ -157,14 +144,14 @@ nav {
     align-items: center;
 }
 
-#call:hover {
+.call:hover {
     color: #FFFFFF;
     background: #A3CC40;
     border: 2px solid #EAEDE2;
     transition: .2s;
 }
 
-#call svg {
+.call svg {
     padding-right: 10px;
     box-sizing: content-box;
 }
@@ -413,12 +400,40 @@ h1 {
     margin-left: 140px;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
 }
 
-.film {
-    ;
+.film__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.films__block {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(144, 210, 61, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.films__block h4 {
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 38px;
+    padding-top: 17px;
+    padding-left: 22px;
+}
+
+.films__block p {
+    margin-left: 22px;
+    margin-top: 13px;
+    width: 237px;
+}
+
+.film__card:hover .films__block {
+    display: block;
 }
 
 .block06 {
@@ -428,6 +443,7 @@ h1 {
 .block06 p {
     margin-top: 30px;
     margin-left: 140px;
+    width: 548px;
 }
 
 .block06__products {
@@ -437,8 +453,43 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-.block06__card:before {
+
+.block06__card {
+    cursor: pointer;
+    width: 245px;
+    height: 331px;
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    transform: scale (15px);
 }
+
+.block06__card :hover {
+    transform: scale (1.08);
+}
+
+.block06__card:before {
+    position: absolute;
+    content: "";
+    border-top: 239px solid transparent;
+    border-bottom: 153px solid rgba(163, 204, 64, 0.8);
+    border-right: 945px solid rgba(163, 204, 64, 0.8);
+}
+
+.card__text {
+    width: 177px;
+    bottom: 30px;
+    left: 34px;
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 .block07 {
     margin-top: 50px;
     background: url("/images/bg-block07.jpg") no-repeat center / cover;
@@ -462,8 +513,170 @@ h1 {
     border-right: 1124px solid #fff;
 }
 
+.block07 h2 {
+    padding-top: 126px;
+}
+
+.block07 h3 {
+    color: #FFFFFF;
+}
+
 .block07 p {
     color: #FFFFFF;
     margin-left: 140px;
-    width: 550px;
+    margin-top: 26px;
+    width: 548px;
+}
+
+.block07__comment {}
+
+.comment {
+    width: 209px;
+    display: inline-block;
+}
+
+.comment2 {
+    width: 246px;
+}
+
+.block08 {
+    margin-top: 43px;
+    margin-left: 174px;
+    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
+    border-radius: 20px;
+    background: linear-gradient(270deg, #FFFFFF 12.2%, rgba(30, 30, 30, 0) 107.85%), url(/images/forbacground.jpg) no-repeat left / cover;
+    background-size: 414px;
+    height: 527px;
+    width: 767px;
+    position: relative;
+}
+
+.block08__feedback {
+    margin-left: 381px;
+    width: 344px;
+}
+
+.block08__feedback h2 {
+    margin-left: 74px;
+    padding-top: 31px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    color: #A3CC40;
+}
+
+input, textarea {
+    padding: 15px 13px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #A1A1A1;
+    background: #DEDEDE;
+    border-radius: 5px;
+    width: 344px;
+    height: 40px;
+    background-color: #DEDEDE;
+    border: none;
+}
+
+.feedback__name {
+    margin-top: 20px;
+}
+
+.feedback__select {
+    margin-top: 33px;
+}
+
+.feedback__review textarea {
+    height: 120px;
+    margin-top: 30px;
+    border: none;
+}
+
+.block08__feedback button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+    color: #FFFFFF;
+    background: #A3CC40;
+    border-radius: 6px;
+    width: 344px;
+    height: 57px;
+    border: none;
+}
+
+.block09 {
+    margin-top: 61px;
+    margin-left: 75px;
+    border-radius: 20px;
+    width: 973px;
+    height: 421px;
+    background: url("/images/map.jpg") no-repeat center/cover;
+    position: relative;
+}
+
+footer {
+    background: #A3CC40;
+    color: #FFFFFF;
+    width: 1126px;
+    height: 362px;
+}
+
+footer p {
+    width: 269px;
+    margin-top: 23px;
+}
+
+footer h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.footer__column1 {
+    width: 436px;
+    margin-left: 89px;
+    padding-top: 84px;
+    float: left;
+}
+
+.icons svg {
+    margin-top: 26px;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: #BEE956;
+    background-size: 31px;
+    border-radius: 100%;
+}
+
+.copyright {
+    margin-top: 42px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.footer__column2, .footer__column3 {
+    float: left;
+    margin-top: 84px;
+}
+
+.footer__column3 {
+    margin-left: 98px;
+}
+
+.footer__column2 li, .footer__column3 li {
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
 }
