@@ -74,7 +74,7 @@ p {
 }
 
 header {
-    height: 668px;
+    height: 667px;
     background: url("/images/bg-header.jpg") no-repeat center / cover;
     color: #FFFFFF;
     position: relative;
@@ -92,7 +92,7 @@ header::after {
 }
 
 .block01__header {
-    margin-left: 83px;
+    margin-left: 89px;
 }
 
 .block01__logo {
@@ -107,11 +107,11 @@ nav, nav li {
 }
 
 nav {
-    margin-left: 44px;
+    margin-left: 40px;
 }
 
 .block01__menu1 li {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     margin-right: 50px;
 }
 
@@ -126,11 +126,24 @@ nav {
     line-height: 16px;
 }
 
-.mail {
-    border-bottom: 1px solid #FFFFFF;
+.block01__menu2 li :hover, .block01__menu1 li :hover {
+    border-bottom: 1px solid;
+    color: #A3CC40;
+    cursor: pointer;
+    transition: .4s;
 }
 
-.call {
+#mail {
+    border-bottom: 1px solid #FFFFFF;
+    text-decoration: none;
+}
+
+#mail:hover {
+    text-decoration-line: none;
+    border-bottom: 1px solid #A3CC40;
+}
+
+#call {
     font-family: IBM Plex Sans;
     font-style: normal;
     background: #FFFFFF;
@@ -144,40 +157,36 @@ nav {
     align-items: center;
 }
 
-.call:hover {
+#call:hover {
     color: #FFFFFF;
     background: #A3CC40;
     border: 2px solid #EAEDE2;
     transition: .2s;
+    text-decoration-line: none;
 }
 
-.call svg {
+#call svg {
+    fill: #333;
     padding-right: 10px;
     box-sizing: content-box;
 }
 
-.call:hover svg {
+#call:hover svg {
     fill: #FFFFFF;
     transition: .2s;
 }
 
-.block01__menu1 li :hover {
-    text-decoration-line: underline;
-    color: #A3CC40;
-    cursor: pointer;
-    transition: .4s;
+.lng {
+    margin-left: 50px;
 }
 
-.block01__menu2 li :hover {
-    text-decoration-line: underline;
-    color: #A3CC40;
-    cursor: pointer;
-    transition: .4s;
+.lng svg {
+    vertical-align: middle;
 }
 
 .block01__header2 {
     text-align: center;
-    margin-top: 131px;
+    margin-top: 130px;
 }
 
 h1 {
@@ -207,6 +216,7 @@ h1 {
 }
 
 .welcome h2 {
+    width: 333px;
     font-weight: 600px;
     font-size: 33px;
     line-height: 43px;
@@ -219,6 +229,11 @@ h1 {
 }
 
 .welcome p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    width: 333px;
     margin-left: 48px;
     margin-right: 68px;
     text-align: left;
@@ -226,13 +241,13 @@ h1 {
     margin-bottom: 10px;
 }
 
-.block02 h2 {
-    margin-top: 40px;
+.block02 {
+    margin-top: 30px;
 }
 
 .block02__marketing {
     margin-top: 84px;
-    margin-left: 96px;
+    margin-left: 85px;
 }
 
 .block02__card {
@@ -259,26 +274,40 @@ h1 {
 }
 
 .block03 {
-    margin-top: 144px;
+    margin-top: 935px
 }
 
 .block03__table {
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 95px;
-    margin-left: 135px;
-    width: 850px;
+    margin-top: 83px;
+    margin-left: 139px;
+    width: 848px;
     table-layout: fixed;
     text-align: left;
+    vertical-align: middle;
     color: #FFFFFF;
 }
 
 .block03__table th {
-    padding: 10px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 9px 0px 10px;
     background: #A3CC40;
     table-layout: fixed;
 }
+
+th button {
+    background: #A3CC40;
+    color: #FFFFFF;
+    border: 0;
+}
+
+th button svg:active {}
 
 .block03__link {
     font-style: normal;
@@ -295,7 +324,7 @@ h1 {
 
 .block03__table td {
     background: #4C4D4F;
-    padding: 15px 0px 12px;
+    padding: 15px 0px 13px;
     font-size: 14px;
     line-height: 18px;
 }
@@ -321,11 +350,17 @@ h1 {
 
 .block04 {
     position: relative;
-    overflow: hidden;
     background: url("/images/backgtround-block04.jpg") no-repeat center / cover;
     margin-top: 110px;
-    height: 585px;
+    height: 589px;
     color: #FFFFFF;
+}
+
+.block04 img {
+    position: absolute;
+    left: 140px;
+    top: -45px;
+    border-radius: 100%;
 }
 
 .block04::before {
@@ -344,18 +379,10 @@ h1 {
     border-right: 1124px solid #fff;
 }
 
-.block04 img {
-    position: absolute;
-    left: 80px;
-    top: 0;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
 .block04__description {
-    width: 548px;
-    margin-top: 115px;
-    margin-left: 450px;
+    width: 547px;
+    padding-top: 117px;
+    margin-left: 443px;
     text-align: right;
 }
 
@@ -365,15 +392,15 @@ h1 {
 }
 
 .block04__text {
-    margin-top: 38px;
+    margin-top: 40px;
 }
 
 .block04__description p {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .block04__description button {
-    margin-top: 30px;
+    margin-top: 31px;
     background: #A3CC40;
     width: 190px;
     height: 31px;
@@ -385,18 +412,27 @@ h1 {
     color: #FFFFFF;
 }
 
+.block04__description button:hover {
+    background: #FFFFFF;
+    transition: .4s;
+    color: #A3CC40;
+    border: 1px solid rgba(163, 204, 64, 0.62);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 9px rgba(144, 210, 61, 0.3)
+}
+
 .block05 {
-    margin-top: 70px;
+    margin-top: 57px;
 }
 
 .block05 p {
-    margin-top: 30px;
+    margin-top: 28px;
     margin-left: 140px;
     width: 548px;
 }
 
 .block05__films {
-    margin-top: 65px;
+    margin-top: 63px;
     margin-left: 140px;
     display: flex;
     flex-wrap: wrap;
@@ -437,11 +473,11 @@ h1 {
 }
 
 .block06 {
-    margin-top: 85px;
+    margin-top: 78px;
 }
 
 .block06 p {
-    margin-top: 30px;
+    margin-top: 28px;
     margin-left: 140px;
     width: 548px;
 }
@@ -462,11 +498,6 @@ h1 {
     overflow: hidden;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
-    transform: scale (15px);
-}
-
-.block06__card :hover {
-    transform: scale (1.08);
 }
 
 .block06__card:before {
@@ -478,10 +509,10 @@ h1 {
 }
 
 .card__text {
-    width: 177px;
-    bottom: 30px;
-    left: 34px;
     position: absolute;
+    width: 177px;
+    bottom: 40px;
+    left: 30px;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -500,7 +531,7 @@ h1 {
 .block07::before {
     content: "";
     position: absolute;
-    border-bottom: 110px solid transparent;
+    border-bottom: 82px solid transparent;
     border-left: 1124px solid #fff;
 }
 
@@ -509,7 +540,7 @@ h1 {
     position: absolute;
     left: 0;
     bottom: 0;
-    border-top: 110px solid transparent;
+    border-top: 68px solid transparent;
     border-right: 1124px solid #fff;
 }
 
@@ -519,6 +550,10 @@ h1 {
 
 .block07 h3 {
     color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
 }
 
 .block07 p {
@@ -528,15 +563,53 @@ h1 {
     width: 548px;
 }
 
-.block07__comment {}
+.block07__comment {
+    width: 842px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 142px;
+    margin-top: 75px;
+}
 
 .comment {
+    flex-direction: column;
+    align-items: center;
+    background-color: #97B13C;
+    border-radius: 9px;
+    overflow: hidden;
     width: 209px;
-    display: inline-block;
+    height: 284px;
+}
+
+.comment p, .comment h3, .comment2 p, .comment2 h3 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.comment p, .comment h3 {
+    width: 186px;
+    padding-top: 15px;
+    padding-left: 8px;
+}
+
+.comment2 p, .comment2 h3 {
+    width: 220px;
+    padding-top: 17px;
+    padding-left: 17px;
 }
 
 .comment2 {
     width: 246px;
+    height: 332px;
+    background-color: #97B13C;
+    border-radius: 9px;
+    background-color: #97B13C;
+    border-radius: 9px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
 }
 
 .block08 {
@@ -545,7 +618,7 @@ h1 {
     box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
     border-radius: 20px;
     background: linear-gradient(270deg, #FFFFFF 12.2%, rgba(30, 30, 30, 0) 107.85%), url(/images/forbacground.jpg) no-repeat left / cover;
-    background-size: 414px;
+    background-size: 413px;
     height: 527px;
     width: 767px;
     position: relative;
@@ -596,6 +669,7 @@ input, textarea {
 }
 
 .block08__feedback button {
+    margin-top: 45px;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -609,6 +683,57 @@ input, textarea {
     border: none;
 }
 
+.feedback__name input:hover, .feedback__select input:hover, .feedback__review textarea:hover {
+    background: #fff;
+    border: 5px solid;
+    border-color: rgba(170, 243, 77, 0.52);
+    ;
+}
+
+.input_checkbox {
+    margin-top: 27px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.checkbox:checked+.check::before {
+    background: url(../images/checkbox-icon.png) no-repeat center;
+    background-size: 0.8rem 0.5rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.check::before {
+    content: "";
+    width: 0.9rem;
+    height: 0.85rem;
+    margin-right: 0.3rem;
+    border: 0.05rem solid #A3CC40;
+    border-radius: 0.25rem;
+}
+
 .block09 {
     margin-top: 61px;
     margin-left: 75px;
@@ -620,6 +745,8 @@ input, textarea {
 }
 
 footer {
+    position: relative;
+    margin-top: -24px;
     background: #A3CC40;
     color: #FFFFFF;
     width: 1126px;
@@ -628,7 +755,11 @@ footer {
 
 footer p {
     width: 269px;
-    margin-top: 23px;
+    margin-top: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 footer h5 {
@@ -640,20 +771,27 @@ footer h5 {
 }
 
 .footer__column1 {
-    width: 436px;
-    margin-left: 89px;
+    width: 438px;
+    margin-left: 91px;
     padding-top: 84px;
     float: left;
 }
 
-.icons svg {
+.icons a {
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
     margin-top: 26px;
-    display: inline-block;
+    display: inline-flex;
     width: 31px;
     height: 31px;
     background: #BEE956;
     background-size: 31px;
     border-radius: 100%;
+}
+
+.icons svg {
+    justify-content: center;
 }
 
 .copyright {
@@ -666,11 +804,11 @@ footer h5 {
 
 .footer__column2, .footer__column3 {
     float: left;
-    margin-top: 84px;
+    margin-top: 85px;
 }
 
 .footer__column3 {
-    margin-left: 98px;
+    margin-left: 70px;
 }
 
 .footer__column2 li, .footer__column3 li {
@@ -679,4 +817,12 @@ footer h5 {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+    width: 140px;
+}
+
+.footer__column2 li:hover, .footer__column3 li:hover {
+    text-decoration-line: underline;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .4s;
 }
