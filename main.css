@@ -40,13 +40,14 @@
 
 html {
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    width: 1124px;
+    width: 100vw;
     margin: 0 auto;
-    min-width: 550px;
+    max-width: 100%;
 }
 
 h2 {
@@ -62,6 +63,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #FFFFFF;
+}
+
 p {
     font-style: normal;
     font-weight: normal;
@@ -74,7 +79,8 @@ p {
 }
 
 header {
-    height: 667px;
+    width: 100vw;
+    height: 100vh;
     background: url("/images/bg-header.jpg") no-repeat center / cover;
     color: #FFFFFF;
     position: relative;
@@ -87,7 +93,7 @@ header::after {
     left: 0;
     bottom: 0;
     border-top: 125px solid transparent;
-    border-right: 1124px solid #fff;
+    border-right: 100vw solid #fff;
     z-index: 0;
 }
 
@@ -192,7 +198,7 @@ nav {
 h1 {
     font-style: normal;
     font-weight: 100;
-    font-size: 68px;
+    font-size: 3.4rem;
     line-height: 88px;
     text-align: center;
 }
@@ -346,6 +352,10 @@ th button svg:active {}
     margin-left: 293px;
     text-align: center;
     width: 540px;
+}
+
+.block03__table a:visited {
+    color: #FFFFFF;
 }
 
 .block04 {
