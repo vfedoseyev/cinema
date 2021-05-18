@@ -605,7 +605,7 @@ tr td svg {
     height: 14.2rem;
 }
 
-.comment p, .comment h3,  {
+.comment p, .comment h3, {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -616,9 +616,6 @@ tr td svg {
     padding-top: 0.75rem;
     padding-left: 0.4rem;
 }
-
-
-
 
 .block08 {
     margin-top: 2.15rem;
@@ -834,4 +831,36 @@ footer h5 {
     color: #ffffff;
     cursor: pointer;
     transition: .4s;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.24);
+    ;
+}
+
+.form-wrapper {
+    background-color: #fff;
+    max-width: 500px;
+    min-height: 100px;
+    margin: 120px auto;
+    border-radius: 40px;
+    position: relative;
+}
+
+.close {
+    background-color: #A3CC40;
+    width: 35px;
+    border-radius: 50px;
+    position: absolute;
+    right: 22px;
+    top: 22px;
 }
