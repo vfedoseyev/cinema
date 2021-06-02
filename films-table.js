@@ -1,95 +1,95 @@
-    const films = [{
-        start: '10:00',
-        title: 'Человек Паук',
-        genre: [{
-                name: 'фантастика'
+const filmList = [{
+    start: '10:00',
+    title: 'Человек Паук',
+    genre: [{
+            name: 'фантастика'
 
-            },
-            {
-                name: 'боевик'
+        },
+        {
+            name: 'боевик'
 
-            },
-            {
-                name: 'приключения'
+        },
+        {
+            name: 'приключения'
 
-            },
-        ]
-    }, {
-        start: '12:00',
-        title: 'Собачья жизнь 2',
-        genre: [{
-                name: 'фентези'
+        },
+    ]
+}, {
+    start: '12:00',
+    title: 'Собачья жизнь 2',
+    genre: [{
+            name: 'фентези'
 
-            },
-            {
-                name: 'драма'
+        },
+        {
+            name: 'драма'
 
-            },
-            {
-                name: 'комедия'
+        },
+        {
+            name: 'комедия'
 
-            },
-        ]
+        },
+    ]
 
-    }, {
-        start: '14:00',
-        title: 'История игрушек 4',
-        genre: [{
-                name: 'мультфильм'
+}, {
+    start: '14:00',
+    title: 'История игрушек 4',
+    genre: [{
+            name: 'мультфильм'
 
-            },
-            {
-                name: 'фентези'
+        },
+        {
+            name: 'фентези'
 
-            },
-            {
-                name: 'комедия'
+        },
+        {
+            name: 'комедия'
 
-            },
-        ]
+        },
+    ]
 
-    }, {
-        start: '16:00',
-        title: 'Люди в чёрном: Интэрнэшнл',
-        genre: [{
-                name: 'фантастика'
+}, {
+    start: '16:00',
+    title: 'Люди в чёрном: Интэрнэшнл',
+    genre: [{
+            name: 'фантастика'
 
-            },
-            {
-                name: 'боевик'
+        },
+        {
+            name: 'боевик'
 
-            },
-            {
-                name: 'комедия'
+        },
+        {
+            name: 'комедия'
 
-            },
-        ]
+        },
+    ]
 
-    }, {
-        start: '01:00',
-        title: 'XXX',
-        adult: true,
-        genre: [{
-                name: 'фантастика'
+}, {
+    start: '01:00',
+    title: 'XXX',
+    adult: true,
+    genre: [{
+            name: 'фантастика'
 
-            },
-            {
-                name: 'боевик'
+        },
+        {
+            name: 'боевик'
 
-            },
-            {
-                name: 'приключения'
+        },
+        {
+            name: 'приключения'
 
-            },
-        ]
-    }];
+        },
+    ]
+}];
 
-    const tableBody = document.getElementById('block03-table-body');
-    tableBody.innerHTML = '';
+const tableBody = document.getElementById('block03-table-body');
+tableBody.innerHTML = '';
 
 
-    for (let index = 0; index < films.length; index++) {
-        tableBody.innerHTML += `
+for (const film of filmList) {
+    tableBody.innerHTML += `
 <tr>
     <td class="fixed-size">
     <input type="checkbox" id="block03__checkbox1">
@@ -101,8 +101,8 @@
         </svg>
     </label>
     </td>
-    <td>${films[index].start}</td>
-    <td><a href="https://www.kinopoisk.ru/">${films[index].title}</a></td>
-    <td>${films[index].genre.map(g=>g.name)}</td>
+    <td>${film.start}</td>
+    <td><a href="https://www.kinopoisk.ru/">${film.title}</a></td>
+    <td>${film.genre.map(g=>g.name)}</td>
 </tr>`;
-    }
+}
