@@ -2,67 +2,67 @@ const filmList = [{
     start: '10:00',
     title: 'Человек Паук',
     genre: [{
-            name: 'фантастика'
+        name: 'фантастика'
 
-        },
-        {
-            name: 'боевик'
+    },
+    {
+        name: 'боевик'
 
-        },
-        {
-            name: 'приключения'
+    },
+    {
+        name: 'приключения'
 
-        },
+    },
     ]
 }, {
     start: '12:00',
     title: 'Собачья жизнь 2',
     genre: [{
-            name: 'фентези'
+        name: 'фентези'
 
-        },
-        {
-            name: 'драма'
+    },
+    {
+        name: 'драма'
 
-        },
-        {
-            name: 'комедия'
+    },
+    {
+        name: 'комедия'
 
-        },
+    },
     ]
 
 }, {
     start: '14:00',
     title: 'История игрушек 4',
     genre: [{
-            name: 'мультфильм'
+        name: 'мультфильм'
 
-        },
-        {
-            name: 'фентези'
+    },
+    {
+        name: 'фентези'
 
-        },
-        {
-            name: 'комедия'
+    },
+    {
+        name: 'комедия'
 
-        },
+    },
     ]
 
 }, {
     start: '16:00',
     title: 'Люди в чёрном: Интэрнэшнл',
     genre: [{
-            name: 'фантастика'
+        name: 'фантастика'
 
-        },
-        {
-            name: 'боевик'
+    },
+    {
+        name: 'боевик'
 
-        },
-        {
-            name: 'комедия'
+    },
+    {
+        name: 'комедия'
 
-        },
+    },
     ]
 
 }, {
@@ -70,23 +70,23 @@ const filmList = [{
     title: 'XXX',
     adult: true,
     genre: [{
-            name: 'фантастика'
+        name: 'фантастика'
 
-        },
-        {
-            name: 'боевик'
+    },
+    {
+        name: 'боевик'
 
-        },
-        {
-            name: 'приключения'
+    },
+    {
+        name: 'приключения'
 
-        },
+    },
     ]
 }];
 
 const filmHelper = {
-    getId() {
-        return this.id || this.title.replaceAll(' ', '-');
+    getId(film) {
+        return film.id || film.title.replaceAll(' ', '-');
     },
     getTitle() {
         return this.title;
@@ -105,7 +105,7 @@ function renderFilmTableItem(film) {
     return `
     <tr>
         <td class="fixed-size">
-        <input type="checkbox" id="${filmHelper.getId.apply(film)}">
+        <input type="checkbox" id="${filmHelper.getId(film)}">
         <label for="${filmHelper.getId.apply(film)}">
             <svg viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"

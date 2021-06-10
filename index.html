@@ -569,7 +569,7 @@
                     <textarea type="texarea" placeholder="Напишите свой отзыв"></textarea>
                 </div>
                 <div class="input_checkbox">
-                    <input class="checkbox visually-hidden" type="checkbox" id="feedback_checkbox" required>
+                    <input class="checkbox visually-hidden" type="checkbox" id="feedback_checkbox">
                     <label class="check" for="feedback_checkbox">Я согласен на обработку своих персональных
                         данных</label>
                 </div>
@@ -729,31 +729,31 @@
 
             </button>
             <form id="prize-form" class="popup-form">
-                <div class="st-input1 st-input1_focused st-inpur1_error">
-                    <p class="st-input__label">Введите имя</p>
-                    <input type="text" name="name" class="st-input1__input required" value="Vladimir">
+                <div class="st-input1 st-input1_focused st-input1_error">
+                    <p class="st-input1__label">Введите имя</p>
+                    <input type="text" name="name" class="st-input1__input required" value="">
                     <p class="st-input1__error-msg">error message</p>
                 </div>
-                <div class="st-input1 st-input1_focused st-inpur1_error">
-                    <p class="st-input__label">Введите адрес</p>
-                    <input type="text" name="email" class="st-input1__input required" value="Vladimir">
+                <div class="st-input1 st-input1_focused st-input1_error">
+                    <p class="st-input1__label">Введите адрес</p>
+                    <input type="text" name="email" class="st-input1__input required" value="">
                     <p class="st-input1__error-msg">error message</p>
                 </div>
                 <div class="input-wrap">
-                    <select name="" id="" class="input-text input-select">
-                        <option value="none">Выберите подарок</option>
+                    <select name="prize" id="chooze-prize" class="input-text input-select st-input1">
+                        <option value="none" disabled selected>Выберите подарок</option>
                         <option value="freePop">Удвоить попкорн</option>
                         <option value="ticket4Free">3-й билет бесплатно</option>
                     </select>
                 </div>
 
-                <label for="" class="st-checkbox">
+                <label class="st-checkbox">
                     <input type="checkbox" name="input-checkbox" class="input-checkbox">
                     <span class="st-checkbox__dot"></span>
                     Я согласен на обработку персональных данных
                 </label>
                 <div class="input-wrap">
-                    <button class="button1 button_big">Отправить</button>
+                    <button type='button' class="button1 button_big">Отправить</button>
                 </div>
 
             </form>
