@@ -46,11 +46,6 @@ var Film = /*#__PURE__*/function () {
   }
 
   _createClass(Film, [{
-    key: "isNotForAdult",
-    value: function isNotForAdult() {
-      return !this.data.adult;
-    }
-  }, {
     key: "getId",
     value: function getId() {
       return this.data.id || this.data.title.replaceAll(' ', '-');
@@ -64,6 +59,11 @@ var Film = /*#__PURE__*/function () {
     key: "getTitle",
     value: function getTitle() {
       return this.data.title;
+    }
+  }, {
+    key: "isNotForAdult",
+    value: function isNotForAdult() {
+      return !this.data.adult;
     }
   }, {
     key: "getGenre",
@@ -81,5 +81,3 @@ var Film = /*#__PURE__*/function () {
 
   return Film;
 }();
-
-var f = new Film(film);

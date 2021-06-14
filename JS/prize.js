@@ -4,7 +4,7 @@ const closeBtn = document.querySelector('#prize-popup__close');
 const nameField = document.querySelector('#prize-popup input[name="name"]').parentNode;
 const emailField = document.querySelector('#prize-popup input[name="email"]').parentNode;
 const selectPrize = document.getElementById('chooze-prize')
-const form = document.getElementById('#prize-form');
+const form = document.getElementById('prize-form');
 
 function popupToggle() {
     popup.classList.toggle('hidden');
@@ -17,11 +17,9 @@ function initializeField(field) {
     const input = field.getElementsByTagName('input')[0];
     const fieldError = field.querySelector(".st-input1__error-msg");
 
-    input.value = '';
-    field.classList.remove(FOCUSED_CLASS_NAME);
-    clearError();
+    reset();
 
-    function clearError() {
+    function cleanError() {
         field.classList.remove(ERROR_CLASS_NAME);
         fieldError.innerText = '';
     }
@@ -35,8 +33,13 @@ function initializeField(field) {
         }
     })
     input.addEventListener('input', () => {
-        clearError();
+        cleanError();
     })
+    function reset() {
+        input.value = '';
+        field.classList.remove(FOCUSED_CLASS_NAME);
+        cleanError();
+    }
     return {
         addError(errorText) {
             field.classList.add(ERROR_CLASS_NAME);
@@ -47,9 +50,10 @@ function initializeField(field) {
         },
         focus() {
             input.focus()
-        }
-    }
-}
+        },
+        reset: reset
+    };
+};
 
 const nameFieldUtils = initializeField(nameField);
 const emailFieldUtils = initializeField(emailField);
@@ -67,7 +71,7 @@ function handleSubmit(event) {
     event.preventDefault();
     const nameValue = nameFieldUtils.getValue();
     const emailValue = emailFieldUtils.getValue();
-    
+
     if (!nameValue) {
         nameFieldUtils.addError('Укажите имя');
         return;
@@ -78,22 +82,29 @@ function handleSubmit(event) {
         return;
 
     }
-    if(selectPrize.value ==='none'){
+    if (!/^[\w-]{2,16}@[\w]{3,16}\.[a-z]{2,3}$/i.test(emailValue)) {
+        emailFieldUtils.addError('Укажите корректный email');
+        return;
+    }
+    if (selectPrize.value === 'none') {
         selectPrize.classList.add(ERROR_CLASS_NAME);
         return;
     }
     const data = {
         name: nameValue,
         email: emailValue,
-        prize:selectPrize.value
+        prize: selectPrize.value
     };
 
     const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
     url.search = new URLSearchParams(data).toString();
 
-    fetch(url.toString());
+    fetch(url.toString())
+        .then(data => data.json())
+        .then((data) => {
+            popUpToggle();
+            nameFieldUtiles.reset();
+            emailFieldUtiles.reset();
+        });
 }
-form.addEventListener('submit', handleSubmit);
-
-
-
+form.addEventListener('submit', handleSubmit)

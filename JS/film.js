@@ -43,9 +43,6 @@ class Film {
         this.data = film;
         this.start = `${toHour(getRandomToMAx(14) + 9)}:${toMinuts(getRandomToMAx(6))} `;
     }
-    isNotForAdult() {
-        return !this.data.adult;
-    }
     getId() {
         return this.data.id || this.data.title.replaceAll(' ', '-');
     }
@@ -54,6 +51,9 @@ class Film {
     }
     getTitle() {
         return this.data.title;
+    }
+    isNotForAdult() {
+        return !this.data.adult;
     }
     getGenre() {
         return this.data.genre
@@ -80,4 +80,3 @@ class Film {
     }
 }
 
-const f = new Film(film)

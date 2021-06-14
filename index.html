@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/CSS/reset.css">
     <link rel="stylesheet" href="/CSS/main.css">
     <link rel="stylesheet" href="/library/owl.carousel.min.css">
     <link rel="stylesheet" href="/library/owl.theme.default.css">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="/library/owl.carousel.min.js"></script>
     <script defer src="/target/utils.js"> </script>
@@ -17,6 +18,7 @@
     <script defer src="/target/main.js"> </script>
     <script defer src="/target/films-table.js"> </script>
     <script defer src="/target/prize.js"> </script>
+    <script defer src="/JS/block-films.js"> </script>
 
     <title>INNOPOLIS CINEMA</title>
 
@@ -235,7 +237,7 @@
                         </button>
                     </th>
                     <th>
-                        <button class="block03__link" id="table-button">
+                        <button type="submit" class="block03__link" id="table-button">
                             Название фильма
                             <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
@@ -329,7 +331,7 @@
                         facilisi nullam vehicula ipsum.
 
                 </div>
-                <button id="btn-prize-open">Получить подарок</button>
+                <button type="submit" id="btn-prize-open">Получить подарок</button>
             </div>
 
         </section>
@@ -338,8 +340,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
                 non quam.</p>
-            <div class="block05__films">
-                <div class="film__card">
+            <div class="block05__films" id="block05-films-wrapper">
+                <div class="film__card" id="">
                     <img src="/images/film1.png" alt="">
                     <div class="films__block">
                         <h4>Выживший</h4>
@@ -740,7 +742,7 @@
                     <p class="st-input1__error-msg">error message</p>
                 </div>
                 <div class="input-wrap">
-                    <select name="prize" id="chooze-prize" class="input-text input-select st-input1">
+                    <select name="prize" id="chooze-prize" class="input-text input-select  st-input1 ">
                         <option value="none" disabled selected>Выберите подарок</option>
                         <option value="freePop">Удвоить попкорн</option>
                         <option value="ticket4Free">3-й билет бесплатно</option>
@@ -753,7 +755,7 @@
                     Я согласен на обработку персональных данных
                 </label>
                 <div class="input-wrap">
-                    <button type='button' class="button1 button_big">Отправить</button>
+                    <button class="button1 button_big" type="submit">Отправить</button>
                 </div>
 
             </form>
