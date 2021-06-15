@@ -479,7 +479,7 @@ tr td svg {
 
 }
 
-.film__img {
+.film__img img {
     width: 14.15rem;
     height: 14.15rem;
     object-fit: cover;

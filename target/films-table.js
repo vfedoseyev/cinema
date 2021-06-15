@@ -63,3 +63,4 @@ for (var _i = 0, _filmsData = filmsData; _i < _filmsData.length; _i++) {
     tableBody.innerHTML += filmInstance.renderFilmTableItem();
   }
 }
+//# sourceMappingURL=films-table.js.map

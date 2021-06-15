@@ -44,7 +44,7 @@ var fetchBlockFilms = /*#__PURE__*/function () {
             data = _context2.sent;
             data.films.forEach( /*#__PURE__*/function () {
               var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(film) {
-                var id, wrapper, imgWrapper, img;
+                var id, wrapper, imgWrapper, img, shadow, descWrapper, title, desc, detailResult, deatilsData, description;
                 return regeneratorRuntime.wrap(function _callee$(_context) {
                   while (1) {
                     switch (_context.prev = _context.next) {
@@ -58,8 +58,33 @@ var fetchBlockFilms = /*#__PURE__*/function () {
                         img.src = film.posterUrlPreview;
                         img.alt = 'Постер к фильму';
                         imgWrapper.append(img);
-                        wrapper.append(imgWrapper);
-                        blockFilmsWrapper.append(wrapper); //     blockFilmsWrapper.innerHTML += `
+                        shadow = document.createElement('div');
+                        shadow.classList.add('block05__shadow');
+                        descWrapper = document.createElement('div');
+                        descWrapper.classList.add('films__block');
+                        title = document.createElement('h4');
+                        title.textContent = film.nameRu;
+                        desc = document.createElement('p');
+                        desc.textContent = '...loading';
+                        descWrapper.append(title, desc);
+                        wrapper.append(imgWrapper, shadow, descWrapper);
+                        blockFilmsWrapper.append(wrapper);
+                        _context.next = 22;
+                        return filmDeatilsRequest(film.filmId);
+
+                      case 22:
+                        detailResult = _context.sent;
+                        _context.next = 25;
+                        return detailResult.json();
+
+                      case 25:
+                        deatilsData = _context.sent;
+                        description = deatilsData.data.description;
+                        desc.textContent = description;
+
+                        if (!description) {
+                          wrapper.remove();
+                        } //     blockFilmsWrapper.innerHTML += `
                         //     <div class="film__card" id="">
                         //         <img class="film__img" src="${film.posterUrlPreview}">
                         //         <div class="films__block">
@@ -70,7 +95,8 @@ var fetchBlockFilms = /*#__PURE__*/function () {
                         //     </div>
                         // `
 
-                      case 11:
+
+                      case 29:
                       case "end":
                         return _context.stop();
                     }
@@ -133,3 +159,4 @@ fetchBlockFilms(); // fetch('https://kinopoiskapiunofficial.tech/api/v2.2/films/
 //                 })
 //         })
 //     })
+//# sourceMappingURL=block-films.js.map

@@ -22,6 +22,7 @@ const filmDeatilsRequest = (id) => {
 const fetchBlockFilms = async () => {
     const result = await topFilmRequest();
     const data = await result.json();
+
     data.films.forEach(async (film) => {
         const id = `blocks-films-desc-${film.filmId}`;
         const wrapper = document.createElement('div');
@@ -31,9 +32,37 @@ const fetchBlockFilms = async () => {
         const img = document.createElement('img');
         img.src = film.posterUrlPreview;
         img.alt = 'Постер к фильму';
+
         imgWrapper.append(img);
-        wrapper.append(imgWrapper);
+
+        const shadow = document.createElement('div');
+        shadow.classList.add('block05__shadow')
+
+        const descWrapper = document.createElement('div')
+        descWrapper.classList.add('films__block')
+
+        const title = document.createElement('h4')
+        title.textContent = film.nameRu;
+
+        const desc = document.createElement('p')
+        desc.textContent = '...loading'
+
+
+        descWrapper.append(title, desc);
+        wrapper.append(imgWrapper, shadow, descWrapper,);
         blockFilmsWrapper.append(wrapper);
+
+        const detailResult = await filmDeatilsRequest(film.filmId);
+        const deatilsData = await detailResult.json();
+
+        const description = deatilsData.data.description;
+        desc.textContent = description;
+        if (!description) {
+            wrapper.remove();
+        }
+
+
+
         //     blockFilmsWrapper.innerHTML += `
         //     <div class="film__card" id="">
         //         <img class="film__img" src="${film.posterUrlPreview}">

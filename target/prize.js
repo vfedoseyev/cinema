@@ -113,3 +113,4 @@ function handleSubmit(event) {
 }
 
 form.addEventListener('submit', handleSubmit);
+//# sourceMappingURL=prize.js.map

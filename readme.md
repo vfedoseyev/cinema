@@ -14,5 +14,5 @@ npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/polyfill
 Запустите команду
 
 ```shell
-npx babel js -d target --watch
+npx babel js -d target --watch --source-maps
 ```
