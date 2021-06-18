@@ -58,6 +58,8 @@ function initializeField(field) {
 const nameFieldUtils = initializeField(nameField);
 const emailFieldUtils = initializeField(emailField);
 
+
+
 openBtn.addEventListener('click', () => {
     popupToggle();
     nameFieldUtils.focus();
@@ -102,9 +104,9 @@ function handleSubmit(event) {
     fetch(url.toString())
         .then(data => data.json())
         .then((data) => {
-            popUpToggle();
-            nameFieldUtiles.reset();
-            emailFieldUtiles.reset();
+            popupToggle();
+            nameFieldUtils.reset();
+            emailFieldUtils.reset();
         });
 }
 form.addEventListener('submit', handleSubmit)

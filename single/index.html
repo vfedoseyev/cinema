@@ -5,26 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="/CSS/reset.css">
     <link rel="stylesheet" href="/CSS/main.css">
     <link rel="stylesheet" href="/library/owl.carousel.min.css">
     <link rel="stylesheet" href="/library/owl.theme.default.css">
 
     <script defer src="/node_modules/@babel/polyfill/dist/polyfill.min.js"></script>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="/library/owl.carousel.min.js"></script>
+
     <script defer src="/target/utils.js"> </script>
-    <script defer src="/target/film.js"> </script>
-    <script defer src="/target/main.js"> </script>
-    <script defer src="/target/films-table.js"> </script>
-    <script defer src="/target/prize.js"> </script>
-    <script defer src="/target/block-films.js"> </script>
+    <script defer src="/target/single-film.js"> </script>
 
-    <title>INNOPOLIS CINEMA</title>
 
+    <title>Document</title>
 </head>
 
 <body>
@@ -136,457 +131,195 @@
 
             </nav>
         </div>
-        <div class="block01__header2">
-            <h1>Закажите билет в кино</h1>
 
-            <p>Всем покупателям подарок!</p>
-        </div>
-        <section class="welcome">
-            <h2>Добро пожаловать!</h2>
-            <div class="welcome__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam.
-                </p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt.
-                </p>
-            </div>
-        </section>
     </header>
     <main>
-
-        <section class="block02">
-            <h2>
-                Почему мы?
-            </h2>
-            <div class="block02__marketing">
-                <div class="block02__card">
-                    <img src="images/doska1.png" alt="" class=>
-                    <h3 class="">Большие экраны</h3>
-                    <p class="block02__text">
-                        LLorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam.
-                    </p>
-                </div>
-                <div class="block02__card">
-                    <img src="images/doska4.png" alt="" class="">
-                    <h3 class="">Объёмный звук</h3>
-                    <p class="block02__text">
-                        LLorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam.
-                    </p>
-                </div>
-                <div class="block02__card">
-                    <img src="images/doska5.png" alt="" class="">
-                    <h3 class="">Удобные кресла</h3>
-                    <p class="block02__text">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam.
-                    </p>
-                </div>
-                <div class="block02__card">
-                    <img src="/images/doska6.png" alt="" class="">
-                    <h3 class="">Уютная атмосфера</h3>
-                    <p class="block02__text">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam.
-                    </p>
-                </div>
-                <div class="block02__card">
-                    <img src="images/doska2.png" alt="" class="">
-                    <h3 class="">Полное погружение</h3>
-                    <p class="block02__text">
-                        Lorem ipsum sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam.
-                    </p>
-                </div>
-                <div class="block02__card">
-                    <img src="images/doska3.png" alt="" class="">
-                    <h3 class="">Поцелуи на заднем ряду</h3>
-                    <p class="block02__text">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam.
-                    </p>
-
-                </div>
-            </div>
-        </section>
-        <section class="block03">
-            <h2>Выберите фильм</h2>
-            <table class="block03__table">
-                <thead>
-                    <th class="fixed-size"></th>
-                    <th>
-                        <button class="block03__link">
-                            Начало сеанса
-                            <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
-                            </svg>
-
-                        </button>
-                    </th>
-                    <th>
-                        <button type="submit" class="block03__link" id="table-button">
-                            Название фильма
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
-                            </svg>
-
-                        </button>
-                    </th>
-                    <th>
-
-                        Жанр
-
-                    </th>
-                </thead>
-                <tbody id="block03-table-body">
-
-                    <tr>
-                        <td class="fixed-size">
-                            <input type="checkbox" id="block03__checkbox1">
-                            <label for="block03__checkbox1">
-                                <svg viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                                        fill="white" />
-                                </svg>
-                            </label>
-                        </td>
-                        <td>12:00</td>
-                        <td><a href="https://www.kinopoisk.ru/">Собачья жизнь 2</a></td>
-                        <td>Фэнтэзи, драма, комедия</td>
-                    </tr>
-                    <tr>
-
-                        <td class="fixed-size">
-                            <input type="checkbox" id="block03__checkbox1">
-                            <label for="block03__checkbox1">
-                                <svg viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                                        fill="white" />
-                                </svg>
-                            </label>
-
-                        </td>
-                        <td>14:00</td>
-                        <td><a href="https://www.kinopoisk.ru/">История игрушек 4</a></td>
-                        <td>Мультфильм, фэнтэзи, комедия</td>
-                    </tr>
-                    <tr>
-
-                        <td class="fixed-size">
-                            <input type="checkbox" id="block03__checkbox1">
-                            <label for="block03__checkbox1">
-                                <svg viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                                        fill="white" />
-                                </svg>
-                            </label>
-
-                        </td>
-                        <td>16:00</td>
-                        <td><a href="https://www.kinopoisk.ru/">Люди в чёрном: Интэрнэшнл</a></td>
-                        <td>Фантастика, боевик, комедия</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </section>
-        <section class="block04">
-            <img src="/images/podarok.png" alt="">
-            <div class="block04__description">
-                <h2>Подарок каждому!</h2>
-                <div class="block04__text">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
-                        elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
-                    </p>
-                    <p>
-                        Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo
-                        quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam
-                        vestibulum morbi blandit cursus risus at ultrices mi tempus.
-
-                    </p>
-                    <p>
-                        Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut
-                        pharetra sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium
-                        quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi
-                        cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla
-                        facilisi nullam vehicula ipsum.
-
-                </div>
-                <button type="submit" id="btn-prize-open">Получить подарок</button>
-            </div>
-
-        </section>
-        <section class="block05">
-            <h2>Фильмы</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                non quam.</p>
-            <div class="block05__films" id="block05-films-wrapper">
-                <div class="film__card" id="">
-                    <img src="/images/film1.png" alt="">
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
+        <div class="wrapper_block_film">
+            <div class="block__wrap_all">
+                <div class="block__wrap_img">
+                    <div class="block_img">
+                        <img class="block_img__img" id="sf-poster" src="/images/placeholder-1.png">
                     </div>
-                </div>
-                <div class="film__card">
-                    <img src="/images/film2.png" alt="">
+                    <div class="block_desc">
+                        <h1 class="header_film" id="sf-header">Загрузка...</h1>
+                        <div class="rating">
+                            <div class="appraisal">
+                                <div class="rating_stars_wrap">
+                                    <div class="rating_stars">
+                                        <svg data-value="1" id="stars" class="rt-star">
+                                            <use xlink:href='#rating-star'></use>
+                                        </svg>
+                                        <svg data-value="2" id="stars" class="rt-star">
+                                            <use xlink:href='#rating-star'></use>
+                                        </svg>
+                                        <svg data-value="3" id="stars" class="rt-star">
+                                            <use xlink:href='#rating-star'></use>
+                                        </svg>
+                                        <svg data-value="4" id="stars" class="rt-star">
+                                            <use xlink:href='#rating-star'></use>
+                                        </svg>
+                                        <svg data-value="5" id="stars" class="rt-star">
+                                            <use xlink:href='#rating-star'></use>
+                                        </svg>
+                                    </div>
+                                    <span class="stars" id="sf-rating-number">5.0</span>
+                                </div>
+                                <div class="rating_wrap">
+                                    <span class="rating_from">Inno Tomatoes</span>
+                                </div>
+                            </div>
 
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
+                            <div class="film_info">
+                                <div class="film_info__blocks">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.5 5.5H3.5V6.5H4.5V5.5ZM6.5 5.5H5.5V6.5H6.5V5.5ZM8.5 5.5H7.5V6.5H8.5V5.5ZM9.5 2H9V1H8V2H4V1H3V2H2.5C1.945 2 1.505 2.45 1.505 3L1.5 10C1.5 10.55 1.945 11 2.5 11H9.5C10.05 11 10.5 10.55 10.5 10V3C10.5 2.45 10.05 2 9.5 2ZM9.5 10H2.5V4.5H9.5V10Z"
+                                            fill="#A3CC40" />
+                                    </svg>
+                                    <span class="text_decor" id="sf-premiere">25 Ноябрь 2019</span>
+
+                                </div>
+                                <div class="film_info__blocks">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6 2.25C3.5 2.25 1.365 3.805 0.5 6C1.365 8.195 3.5 9.75 6 9.75C8.5 9.75 10.635 8.195 11.5 6C10.635 3.805 8.5 2.25 6 2.25ZM6 8.5C4.62 8.5 3.5 7.38 3.5 6C3.5 4.62 4.62 3.5 6 3.5C7.38 3.5 8.5 4.62 8.5 6C8.5 7.38 7.38 8.5 6 8.5ZM6 4.5C5.17 4.5 4.5 5.17 4.5 6C4.5 6.83 5.17 7.5 6 7.5C6.83 7.5 7.5 6.83 7.5 6C7.5 5.17 6.83 4.5 6 4.5Z"
+                                            fill="#A3CC40" />
+                                    </svg>
+                                    <span class="text_decor" id="sf-views">2.5K Views</span>
+
+                                </div>
+                                <div class="film_info__blocks">
+                                    <svg class="like-icon" id="like-icon" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6 10.675L5.275 10.015C2.7 7.68 1 6.14 1 4.25C1 2.71 2.21 1.5 3.75 1.5C4.62 1.5 5.455 1.905 6 2.545C6.545 1.905 7.38 1.5 8.25 1.5C9.79 1.5 11 2.71 11 4.25C11 6.14 9.3 7.68 6.725 10.02L6 10.675Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <span class="text_decor" id="sf-likes">200 Likes</span>
+
+                                </div>
+                            </div>
+                            <div class="film_desc__block" id="sf-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+
+                            </div>
+                            <div class="table_fiml__info">
+                                <table>
+                                    <tbody class="table_body">
+                                        <tr>
+                                            <td class="head_info">Страна</td>
+                                            <td class="head_desc">Дания</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="head_info">Режиссер</td>
+                                            <td class="head_desc">Михаэль Ноер</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="head_info">Сценарий</td>
+                                            <td class="head_desc">Джеспер Финк, Михаэль Ноер</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="head_info">Продюсер</td>
+                                            <td class="head_desc">Матильда Аппелин, Рене Эзра, Томас Радур, ...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="head_info">Оператор</td>
+                                            <td class="head_desc">Стурла Брандт Грёвлен</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="head_info">Композитор</td>
+                                            <td class="head_desc">Руне Тонсгор Сёренсен</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="head_info">Художник</td>
+                                            <td class="head_desc">Сорен Шварцберг, Луиз Ниссен</td>
+                                        </tr>
+                                        <tr class="head_desc__bold_block">
+                                            <td class="head_info">Время</td>
+                                            <td class="head_info head_desc__bold"> 104 мин. / 01:44</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-                <div class="film__card">
-                    <img src="/images/film3.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="film__card">
-                    <img src="/images/film4.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="film__card">
-                    <img src="/images/film5.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="film__card">
-                    <img src="/images/film6.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="film__card">
-                    <img src="/images/film7.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="film__card">
-                    <img src="/images/film8.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="film__card">
-                    <img src="/images/film9.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-
-                </div>
-        </section>
-        <section class="block06">
-
-            <h2>Товары</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar
-                etiam non quam.</p>
-            <div class="block06__products">
-                <div class="block06__card">
-                    <img src="images/tovar1.png" alt="">
-                    <div class="card__text">
-                        Coca-cola
-                    </div>
-
-                </div>
-                <div class="block06__card">
-                    <img src="images/tovar2.png" alt="">
-                    <div class="card__text">Брелок
-                        “Железный человек”
-                    </div>
-                </div>
-                <div class="block06__card">
-                    <img src="images/tovar3.png" alt="">
-                    <div class="card__text">Постер
-                        “Мстители”
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="block07">
-
-            <h2>Отзывы</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et
-                dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
-                pulvinar etiam
-                non quam.</p>
-
-            <div class="block07__comment owl-carousel owl-theme">
-                <div class="comment">
-                    <img src="images/otziv1.png" alt="">
-                    <h3>Елена Еленова</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
-                    </p>
-                </div>
-                <div class="comment">
-                    <img src="images/otziv2.png" alt="">
-                    <h3>Борис Борисов</h3>
-                    <p>Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="comment">
-                    <img src="images/otziv3.png" alt="">
-                    <h3>Борис Борисов</h3>
-                    <p> ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="comment">
-                    <img src="images/otziv1.png" alt="">
-                    <h3>Елена Еленова</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
-                    </p>
                 </div>
             </div>
 
-        </section>
-        <section class="block08">
-            <form class="block08__feedback">
-                <h2>Обратная связь</h2>
-                <div class="feedback__name">
-                    <input type="name" name="username" placeholder="Полное имя">
-                </div>
-                <div class="feedback__select">
-                    <input type="select" placeholder="Номер места">
-                </div>
-                <div class="feedback__review">
-                    <textarea type="texarea" placeholder="Напишите свой отзыв"></textarea>
-                </div>
-                <div class="input_checkbox">
-                    <input class="checkbox visually-hidden" type="checkbox" id="feedback_checkbox">
-                    <label class="check" for="feedback_checkbox">Я согласен на обработку своих персональных
-                        данных</label>
-                </div>
-                <button type="submit">послать
-                </button>
 
-            </form>
-        </section>
-        <section class="block09">
-
-        </section>
-
+            <div class="head__other_film__wrapper">
+                <div class="head__other_film">Другие фильмы</div>
+                <div class="block__other_films">
+                    <div class="head__genre_film">Экшн</div>
+                    <div class="block__films_genre owl-carousel owl-theme">
+                        <div class="film_block_carousel">
+                            <div class="wrap_block_carousel__img">
+                                <img src="/images/film2.jpg" alt="">
+                            </div>
+                            <div class="film_block_wrap_other_films">
+                                <span class="name_block_film">Лёд</span>
+                                <span class="author_year_block_film">2018, фильм Ивана Иванова</span>
+                            </div>
+                        </div>
+                        <div class="film_block_carousel">
+                            <div class="wrap_block_carousel__img">
+                                <img src="/images/film2.jpg" alt="">
+                            </div>
+                            <div class="film_block_wrap_other_films">
+                                <span class="name_block_film">Лёд</span>
+                                <span class="author_year_block_film">2018, фильм Ивана Иванова</span>
+                            </div>
+                        </div>
+                        <div class="film_block_carousel">
+                            <div class="wrap_block_carousel__img">
+                                <img src="/images/film2.jpg" alt="">
+                            </div>
+                            <div class="film_block_wrap_other_films">
+                                <span class="name_block_film">Лёд</span>
+                                <span class="author_year_block_film">2018, фильм Ивана Иванова</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__other_films">
+                    <div class="head__genre_film">Драма</div>
+                    <div class="block__films_genre owl-carousel owl-theme">
+                        <div class="film_block_carousel">
+                            <div class="wrap_block_carousel__img">
+                                <img src="/images/film2.jpg" alt="">
+                            </div>
+                            <div class="film_block_wrap_other_films">
+                                <span class="name_block_film">Лёд</span>
+                                <span class="author_year_block_film">2018, фильм Ивана Иванова</span>
+                            </div>
+                        </div>
+                        <div class="film_block_carousel">
+                            <div class="wrap_block_carousel__img">
+                                <img src="/images/film2.jpg" alt="">
+                            </div>
+                            <div class="film_block_wrap_other_films">
+                                <span class="name_block_film">Лёд</span>
+                                <span class="author_year_block_film">2018, фильм Ивана Иванова</span>
+                            </div>
+                        </div>
+                        <div class="film_block_carousel">
+                            <div class="wrap_block_carousel__img">
+                                <img src="/images/film2.jpg" alt="">
+                            </div>
+                            <div class="film_block_wrap_other_films">
+                                <span class="name_block_film">Лёд</span>
+                                <span class="author_year_block_film">2018, фильм Ивана Иванова</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <section class="footer__column1">
@@ -727,44 +460,6 @@
         </section>
 
     </footer>
-
-    <div class="popup hidden" id="prize-popup">
-        <div class="form-wrapper">
-            <button class="close" id="prize-popup__close">
-
-            </button>
-            <form id="prize-form" class="popup-form">
-                <div class="st-input1 st-input1_focused st-input1_error">
-                    <p class="st-input1__label">Введите имя</p>
-                    <input type="text" name="name" class="st-input1__input required" value="">
-                    <p class="st-input1__error-msg">error message</p>
-                </div>
-                <div class="st-input1 st-input1_focused st-input1_error">
-                    <p class="st-input1__label">Введите адрес</p>
-                    <input type="text" name="email" class="st-input1__input required" value="">
-                    <p class="st-input1__error-msg">error message</p>
-                </div>
-                <div class="input-wrap">
-                    <select name="prize" id="chooze-prize" class="input-text input-select  st-input1 ">
-                        <option value="none" disabled selected>Выберите подарок</option>
-                        <option value="freePop">Удвоить попкорн</option>
-                        <option value="ticket4Free">3-й билет бесплатно</option>
-                    </select>
-                </div>
-
-                <label class="st-checkbox">
-                    <input type="checkbox" name="input-checkbox" class="input-checkbox">
-                    <span class="st-checkbox__dot"></span>
-                    Я согласен на обработку персональных данных
-                </label>
-                <div class="input-wrap">
-                    <button class="button1 button_big" type="submit">Отправить</button>
-                </div>
-
-            </form>
-        </div>
-    </div>
-
 </body>
 
 </html>

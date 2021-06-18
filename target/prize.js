@@ -106,9 +106,9 @@ function handleSubmit(event) {
   fetch(url.toString()).then(function (data) {
     return data.json();
   }).then(function (data) {
-    popUpToggle();
-    nameFieldUtiles.reset();
-    emailFieldUtiles.reset();
+    popupToggle();
+    nameFieldUtils.reset();
+    emailFieldUtils.reset();
   });
 }
 
