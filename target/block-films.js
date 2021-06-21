@@ -25,7 +25,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 var blockFilmsWrapper = document.getElementById('block05-films-wrapper');
-blockFilmsWrapper.innerHTML = '';
 
 function renderFilmBlock(posterUrl, filmName, id) {
   var wrapper = document.createElement('div');
@@ -144,10 +143,11 @@ var fetchBlockFilms = /*#__PURE__*/function () {
             //         break;
             //     }
             // }
+            blockFilmsWrapper.innerHTML = '';
             elements = _toConsumableArray(filmBlocksMap.values()).slice(0, 9);
             blockFilmsWrapper.append.apply(blockFilmsWrapper, _toConsumableArray(elements));
 
-          case 13:
+          case 14:
           case "end":
             return _context3.stop();
         }

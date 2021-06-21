@@ -1,7 +1,4 @@
 const blockFilmsWrapper = document.getElementById('block05-films-wrapper');
-blockFilmsWrapper.innerHTML = '';
-
-
 
 
 function renderFilmBlock(posterUrl, filmName, id) {
@@ -75,7 +72,9 @@ const fetchBlockFilms = async () => {
     //         break;
     //     }
     // }
+    blockFilmsWrapper.innerHTML = '';
     const elements = [...filmBlocksMap.values()].slice(0, 9)
+
     blockFilmsWrapper.append(...elements);
 }
 fetchBlockFilms();

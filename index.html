@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="/CSS/reset.css">
-    <link rel="stylesheet" href="/CSS/main.css">
-    <link rel="stylesheet" href="/library/owl.carousel.min.css">
-    <link rel="stylesheet" href="/library/owl.theme.default.css">
 
-    <script defer src="/node_modules/@babel/polyfill/dist/polyfill.min.js"></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="library/owl.carousel.min.css">
+    <link rel="stylesheet" href="library/owl.theme.default.css">
+
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="/library/owl.carousel.min.js"></script>
-    <script defer src="/target/utils.js"> </script>
-    <script defer src="/target/film.js"> </script>
-    <script defer src="/target/main.js"> </script>
-    <script defer src="/target/films-table.js"> </script>
-    <script defer src="/target/prize.js"> </script>
-    <script defer src="/target/block-films.js"> </script>
+    <script defer src="node_modules/@babel/polyfill/dist/polyfill.min.js"></script>
+    <script defer src="library/owl.carousel.min.js"></script>
+    <script defer src="target/utils.js"> </script>
+    <script defer src="target/film.js"> </script>
+    <script defer src="target/main.js"> </script>
+    <script defer src="target/films-table.js"> </script>
+    <script defer src="target/prize.js"> </script>
+    <script defer src="target/block-films.js"> </script>
 
     <title>INNOPOLIS CINEMA</title>
 
@@ -109,17 +109,22 @@
                                 Заказать звонок
                             </button>
                         </li>
-                        <li class="lng">
-                            <a href="#">
-                                <span class="lng1">RU
-                                    <svg class="lng2" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                        <li class="lang">
+                            <div class="dropdown">
+                                <button class="lang_trigger">
+                                    <span>RU</span>
+                                    <svg class="lang_trigger__arrow" viewBox="0 0 8 4"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M4.00406 3.8728L0.824164 0.692904L1.38985 0.127219L4.00406 2.74143L6.61827 0.127219L7.18396 0.692905L4.00406 3.8728Z"
-                                            fill="white" />
+                                            d="M4.00406 3.8728L0.824164 0.692904L1.38985 0.127219L4.00406 2.74143L6.61827 0.127219L7.18396 0.692905L4.00406 3.8728Z" />
                                     </svg>
-                                </span>
-                            </a>
+                                </button>
+                                <div class="lang_list">
+                                    <a href="">RU</a>
+                                    <a href="">EN</a>
+                                </div>
+                            </div>
+
                         </li>
                     </ul>
                 </div>
@@ -193,7 +198,7 @@
                     </p>
                 </div>
                 <div class="block02__card">
-                    <img src="/images/doska6.png" alt="" class="">
+                    <img src="images/doska6.png" alt="" class="">
                     <h3 class="">Уютная атмосфера</h3>
                     <p class="block02__text">
                         Lorem ipsum dolor sit amet, consectetur
@@ -312,7 +317,7 @@
             </p>
         </section>
         <section class="block04">
-            <img src="/images/podarok.png" alt="">
+            <img src="images/podarok.png" alt="">
             <div class="block04__description">
                 <h2>Подарок каждому!</h2>
                 <div class="block04__text">
@@ -344,8 +349,19 @@
                 dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
                 non quam.</p>
             <div class="block05__films" id="block05-films-wrapper">
-                <div class="film__card" id="">
-                    <img src="/images/film1.png" alt="">
+                <div class="skeleton-box-wrapper">
+                    <div class="skeleton-film-box"></div>
+                    <div class="skeleton-film-box"></div>
+                    <div class="skeleton-film-box"></div>
+                    <div class="skeleton-film-box"></div>
+                    <div class="skeleton-film-box"></div>
+                    <div class="skeleton-film-box"></div>
+                    <div class="skeleton-film-box"></div>
+                    <div class="skeleton-film-box"></div>
+                    <div class="skeleton-film-box"></div>
+                </div>
+                <!-- <div class="film__card" id="">
+                    <img src="images/film1.png" alt="">
                     <div class="films__block">
                         <h4>Выживший</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur
@@ -359,39 +375,7 @@
                     </div>
                 </div>
                 <div class="film__card">
-                    <img src="/images/film2.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="film__card">
-                    <img src="/images/film3.png" alt="">
-
-                    <div class="films__block">
-                        <h4>Выживший</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
-                            cursus
-                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
-                            non
-                            quam. Ut pharetra sit amet aliquam id diam maecenas.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="film__card">
-                    <img src="/images/film4.png" alt="">
+                    <img src="images/film2.png" alt="">
 
                     <div class="films__block">
                         <h4>Выживший</h4>
@@ -407,7 +391,23 @@
 
                 </div>
                 <div class="film__card">
-                    <img src="/images/film5.png" alt="">
+                    <img src="images/film3.png" alt="">
+
+                    <div class="films__block">
+                        <h4>Выживший</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
+                            cursus
+                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
+                            non
+                            quam. Ut pharetra sit amet aliquam id diam maecenas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="film__card">
+                    <img src="images/film4.png" alt="">
 
                     <div class="films__block">
                         <h4>Выживший</h4>
@@ -423,7 +423,7 @@
 
                 </div>
                 <div class="film__card">
-                    <img src="/images/film6.png" alt="">
+                    <img src="images/film5.png" alt="">
 
                     <div class="films__block">
                         <h4>Выживший</h4>
@@ -439,7 +439,7 @@
 
                 </div>
                 <div class="film__card">
-                    <img src="/images/film7.png" alt="">
+                    <img src="images/film6.png" alt="">
 
                     <div class="films__block">
                         <h4>Выживший</h4>
@@ -455,7 +455,7 @@
 
                 </div>
                 <div class="film__card">
-                    <img src="/images/film8.png" alt="">
+                    <img src="images/film7.png" alt="">
 
                     <div class="films__block">
                         <h4>Выживший</h4>
@@ -471,7 +471,7 @@
 
                 </div>
                 <div class="film__card">
-                    <img src="/images/film9.png" alt="">
+                    <img src="images/film8.png" alt="">
 
                     <div class="films__block">
                         <h4>Выживший</h4>
@@ -484,6 +484,22 @@
                             quam. Ut pharetra sit amet aliquam id diam maecenas.
                         </p>
                     </div>
+
+                </div>
+                <div class="film__card">
+                    <img src="images/film9.png" alt="">
+
+                    <div class="films__block">
+                        <h4>Выживший</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris
+                            cursus
+                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
+                            non
+                            quam. Ut pharetra sit amet aliquam id diam maecenas.
+                        </p>
+                    </div> -->
 
                 </div>
         </section>
@@ -763,6 +779,14 @@
 
             </form>
         </div>
+    </div>
+    <div class="scrollUp">
+        <svg class="scrollUp__svg" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.00406 3.8728L0.824164 0.692904L1.38985 0.127219L4.00406 2.74143L6.61827 0.127219L7.18396 0.692905L4.00406 3.8728Z"
+                fill="white" />
+        </svg>
+
     </div>
 
 </body>
