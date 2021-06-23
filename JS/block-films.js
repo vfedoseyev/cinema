@@ -73,7 +73,7 @@ const fetchBlockFilms = async () => {
     //     }
     // }
     blockFilmsWrapper.innerHTML = '';
-    const elements = [...filmBlocksMap.values()].slice(0, 9)
+    const elements = [...filmBlocksMap.values()].slice(0, 9);
 
     blockFilmsWrapper.append(...elements);
 }
