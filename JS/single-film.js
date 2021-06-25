@@ -7,7 +7,6 @@ const filmId = SearchParams.get('id');
 const FilmKinopoickData = async () => {
     const answer = await filmDetailsRequest(filmId);
     const { data: FilmData } = await answer.json();
-    console.log(FilmData)
     const header = document.getElementById('sf-header');
     const posterImage = document.querySelector('#sf-poster');
     const description = document.querySelector('#sf-desc');
@@ -20,7 +19,7 @@ const FilmKinopoickData = async () => {
 
 }
 
-const fetchfilmMeta = async () => {
+const fetchFilmMeta = async () => {
     const answer = await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}`);
     const { body } = await answer.json();
 
@@ -46,14 +45,13 @@ const fetchfilmMeta = async () => {
 const likeIcon = document.getElementById('like-icon');
 const FILM_KEY = `film-${filmId}`
 const liked = localStorage.getItem(FILM_KEY)
-if (!liked === null) {
+if (liked !== null) {
     likeIcon.classList.add('like-icon--liked')
 }
 likeIcon.addEventListener('click', () => {
     if (!likeIcon.classList.contains('like-icon--liked')) {
         localStorage.setItem(FILM_KEY, true)
         const likeCount = parseInt(likes.textContent, 10) + 1;
-
         likes.innerText = `${likeCount} Likes`;
         likeIcon.classList.add('like-icon--liked');
         likes.classList.add('like-icon--liked');
@@ -96,8 +94,8 @@ $('.rating_stars').on('click', '.rt-star', async function () {
             rating: +this.dataset.value
         })
     });
-    fethcFilmMeta();
+    fetchFilmMeta();
 })
 
 FilmKinopoickData();
-fetchfilmMeta();
+fetchFilmMeta();

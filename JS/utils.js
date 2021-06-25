@@ -14,7 +14,7 @@ const kinopoiskapiunofficialRequest = (url) => {
             'accept': 'application/json',
             'X-API-KEY': '88461c41-2f0c-44d9-9484-4604e4779f76'
         },
-        cors: 'no-cors'
+        cors: 'no-cors',
     });
 }
 

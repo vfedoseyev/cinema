@@ -359,9 +359,8 @@ h1 {
 
 .block02__card {
     margin-left: 7rem;
-    display: table;
-    width: 21.79vw;
-    height: 338px;
+    width: 14.15rem;
+    height: 14.15rem;
     text-align: center;
     margin-left: 2.7rem;
     margin-bottom: 1.45rem;
@@ -562,7 +561,6 @@ tr td svg {
 .film__card {
     width: 14.15rem;
     height: 14.15rem;
-    display: table;
     position: relative;
     overflow: hidden;
 
@@ -1320,7 +1318,7 @@ footer h5 {
 }
 
 .head__other_film__wrapper {
-    margin: 2.5rem auto;
+    margin: 2.5rem 4rem;
 }
 
 .head__other_film {
@@ -1334,7 +1332,8 @@ footer h5 {
 
 .block__other_films {
     width: 42.5rem;
-    margin: 1.25rem auto;
+    margin: 1rem 6.5rem;
+    overflow: hidden;
 }
 
 .head__genre_film {
@@ -1364,8 +1363,8 @@ footer h5 {
 }
 
 .wrap_block_carousel__img {
-    width: 6.4rem;
-    height: 7.25rem;
+    width: 7rem;
+    height: 7.3rem;
 }
 
 .name_block_film {
@@ -1387,7 +1386,7 @@ footer h5 {
 
 .film_block_carousel {
     width: 6.5rem;
-    
+
 }
 
 .scrollUp {
@@ -1397,7 +1396,8 @@ footer h5 {
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
-    background-color: rgba(42, 47, 43, 0.774);
+    background-color: #A3CC40;
+    ;
     z-index: 2;
 }
 
@@ -1416,10 +1416,10 @@ footer h5 {
 }
 
 .skeleton-film-box {
-    width: 285px;
-    height: 285px;
+    width: 13.9rem;
+    height: 13.9rem;
     border-radius: 3%;
-    margin: 2px;
+    margin: 0.1rem;
     animation: shine-avatar 1.6s infinite linear;
 }
 

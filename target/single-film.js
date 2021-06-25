@@ -34,7 +34,6 @@ var FilmKinopoickData = /*#__PURE__*/function () {
           case 5:
             _yield$answer$json = _context.sent;
             FilmData = _yield$answer$json.data;
-            console.log(FilmData);
             header = document.getElementById('sf-header');
             posterImage = document.querySelector('#sf-poster');
             description = document.querySelector('#sf-desc');
@@ -44,7 +43,7 @@ var FilmKinopoickData = /*#__PURE__*/function () {
             posterImage.src = FilmData.posterUrl;
             premiere.textContent = FilmData.premiereRu;
 
-          case 16:
+          case 15:
           case "end":
             return _context.stop();
         }
@@ -57,7 +56,7 @@ var FilmKinopoickData = /*#__PURE__*/function () {
   };
 }();
 
-var fetchfilmMeta = /*#__PURE__*/function () {
+var fetchFilmMeta = /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
     var answer, _yield$answer$json2, body, views, ratingNumber, rating, intRating, i, star;
 
@@ -117,7 +116,7 @@ var fetchfilmMeta = /*#__PURE__*/function () {
     }, _callee2);
   }));
 
-  return function fetchfilmMeta() {
+  return function fetchFilmMeta() {
     return _ref2.apply(this, arguments);
   };
 }();
@@ -126,7 +125,7 @@ var likeIcon = document.getElementById('like-icon');
 var FILM_KEY = "film-".concat(filmId);
 var liked = localStorage.getItem(FILM_KEY);
 
-if (!liked === null) {
+if (liked !== null) {
   likeIcon.classList.add('like-icon--liked');
 }
 
@@ -192,7 +191,7 @@ $('.rating_stars').on('click', '.rt-star', /*#__PURE__*/_asyncToGenerator( /*#__
           });
 
         case 2:
-          fethcFilmMeta();
+          fetchFilmMeta();
 
         case 3:
         case "end":
@@ -202,5 +201,5 @@ $('.rating_stars').on('click', '.rt-star', /*#__PURE__*/_asyncToGenerator( /*#__
   }, _callee3, this);
 })));
 FilmKinopoickData();
-fetchfilmMeta();
+fetchFilmMeta();
 //# sourceMappingURL=single-film.js.map
