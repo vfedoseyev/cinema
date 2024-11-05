@@ -655,7 +655,7 @@ tr td svg {
 
 .block07 {
     margin-top: 2.5rem;
-    background: url("/images/bg-block07.jpg") no-repeat center / cover;
+    background: url("../images/bg-block07.jpg") no-repeat center / cover;
     height: 39.6rem;
     position: relative;
 }
@@ -854,7 +854,7 @@ textarea {
     border-radius: 1rem;
     width: 86.56vw;
     height: 21.05rem;
-    background: url("/images/map.jpg") no-repeat center/cover;
+    background: url("../images/map.jpg") no-repeat center/cover;
     position: relative;
 }
 
@@ -982,7 +982,7 @@ footer h5 {
 }
 
 .close:hover {
-    background-image: url(/svg/close.svg);
+    background-image: url(../svg/close.svg);
 }
 
 .popup-form {
@@ -1060,7 +1060,7 @@ footer h5 {
     color: #A1A1A1;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: #DEDEDE url(/svg/arrow.svg) no-repeat center right 0.6rem;
+    background: #DEDEDE url(../svg/arrow.svg) no-repeat center right 0.6rem;
     border: none;
     width: 100%;
     padding: 0.6rem 0.8rem 0.55rem;
@@ -1108,7 +1108,7 @@ footer h5 {
 }
 
 .input-checkbox:checked+.st-checkbox__dot::before {
-    background: url("/images/checkbox-icon.png") no-repeat center/cover;
+    background: url("../images/checkbox-icon.png") no-repeat center/cover;
     background-size: 0.8rem 0.5rem;
 }
 
