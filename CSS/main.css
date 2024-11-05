@@ -84,7 +84,7 @@ p {
 header {
     width: 100vw;
     height: 100vh;
-    background: url("/images/bg-header.jpg") no-repeat center / cover;
+    background: url("../images/bg-header.jpg") no-repeat center / cover;
     color: #FFFFFF;
     position: relative;
 }
